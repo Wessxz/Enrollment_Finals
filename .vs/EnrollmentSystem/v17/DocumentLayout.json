@@ -1,0 +1,1355 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\FacultyDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\FacultyDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\FacultyDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\FacultyDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\EncodeGradesForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\EncodeGradesForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\RegistrarDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\RegistrarDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\StudentForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\StudentForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierStatistics.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CashierStatistics.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UserCreationForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\UserCreationForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionScheduleForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\SectionScheduleForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\IrregularEnrollmentForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\IrregularEnrollmentForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\AdminDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\FacultyDashboard.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\FacultyDashboard.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|c:\\users\\lenovo\\source\\repos\\enrollmentsystem\\enrollmentsystem\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:enrollmentsystem\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AnnouncementForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\AnnouncementForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminReportsForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\AdminReportsForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ReportsForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\ReportsForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\PaymentForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\PaymentForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CourseSubjectForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CourseSubjectForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|c:\\users\\lenovo\\source\\repos\\enrollmentsystem\\enrollmentsystem\\cashierform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:enrollmentsystem\\cashierform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ScheduleForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\ScheduleForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CashierDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BillingForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\BillingForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BillingForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\BillingForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BillingForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\BillingForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierReportsForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CashierReportsForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CashierDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CashierForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Dean.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\Dean.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierStatistics.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CashierStatistics.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierReportsForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CashierReportsForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierReportsForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CashierReportsForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierStatistics.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CashierStatistics.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ClassListForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\ClassListForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierDashboard.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CashierDashboard.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\IrregularEnrollmentForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\IrregularEnrollmentForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\GradesForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\GradesForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\RegistrarDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\RegistrarDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\frmDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\frmDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ClassListForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\ClassListForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\SectionForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\StudentForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\StudentForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\SectionForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\StudentForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\StudentForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\SectionForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ScheduleForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\ScheduleForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UserCreationForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\UserCreationForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionScheduleForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\SectionScheduleForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionScheduleForm.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\SectionScheduleForm.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ScheduleForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\ScheduleForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\PaymentForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\PaymentForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\My Project\\Application.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\My Project\\Application.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\PaymentForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\PaymentForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UsersForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\UsersForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\RegistrarDashboard.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\RegistrarDashboard.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\frmDashboard.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\frmDashboard.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Connection.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\Connection.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\frmDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\frmDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\AdminDashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminDashboard.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\AdminDashboard.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\Form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ClassListForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\ClassListForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UserCreationForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\UserCreationForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UsersForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\UsersForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CourseSubjectForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CourseSubjectForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\Login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AnnouncementForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\AnnouncementForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ReportsForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\ReportsForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Login.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\Login.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\EncodeGradesForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\EncodeGradesForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AnnouncementForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\AnnouncementForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\EncodeGradesForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\EncodeGradesForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ReportsForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\ReportsForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\CashierForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BalanceForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\BalanceForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminReportsForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\AdminReportsForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminReportsForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\AdminReportsForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UsersForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\UsersForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\GradesForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\GradesForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\GradesForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\GradesForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BalanceForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\BalanceForm.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BalanceForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}|EnrollmentSystem\\EnrollmentSystem.vbproj|solutionrelative:EnrollmentSystem\\BalanceForm.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CourseSubjectForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CourseSubjectForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CourseSubjectForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CourseSubjectForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\CourseSubjectForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T08:05:32.06Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ScheduleForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ScheduleForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\ScheduleForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ScheduleForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\ScheduleForm.vb",
+              "ViewState": "AgIAANABAAAAAAAAAAAqwOABAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-19T16:59:24.092Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:41:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FacultyDashboard.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\FacultyDashboard.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\FacultyDashboard.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\FacultyDashboard.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\FacultyDashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:59:37.4Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\StudentForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\StudentForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\StudentForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\StudentForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:33:24.525Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistrarDashboard.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\RegistrarDashboard.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\RegistrarDashboard.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\RegistrarDashboard.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\RegistrarDashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-19T15:35:23.637Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EncodeGradesForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\EncodeGradesForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\EncodeGradesForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\EncodeGradesForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\EncodeGradesForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-25T01:16:28.234Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FacultyDashboard.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\FacultyDashboard.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\FacultyDashboard.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\FacultyDashboard.vb",
+              "RelativeToolTip": "EnrollmentSystem\\FacultyDashboard.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T03:00:04.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CashierStatistics.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierStatistics.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CashierStatistics.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierStatistics.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\CashierStatistics.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-28T14:59:10.311Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserCreationForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UserCreationForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\UserCreationForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UserCreationForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\UserCreationForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T04:57:51.695Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SectionScheduleForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionScheduleForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\SectionScheduleForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionScheduleForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\SectionScheduleForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-25T01:48:54.503Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IrregularEnrollmentForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\IrregularEnrollmentForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\IrregularEnrollmentForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\IrregularEnrollmentForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\IrregularEnrollmentForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-26T02:01:46.913Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminDashboard.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminDashboard.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\AdminDashboard.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminDashboard.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\AdminDashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-19T15:49:28.932Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FacultyDashboard.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\FacultyDashboard.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\FacultyDashboard.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\FacultyDashboard.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\FacultyDashboard.Designer.vb",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAQwLUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:59:44.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\packages.config",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\packages.config",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\packages.config",
+              "RelativeToolTip": "EnrollmentSystem\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-04-28T15:32:48.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminReportsForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminReportsForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\AdminReportsForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminReportsForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\AdminReportsForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-19T15:35:12.836Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReportsForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ReportsForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\ReportsForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ReportsForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\ReportsForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:57:08.106Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AnnouncementForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AnnouncementForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\AnnouncementForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AnnouncementForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\AnnouncementForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-19T15:35:12.323Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PaymentForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\PaymentForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\PaymentForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\PaymentForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\PaymentForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T08:10:48.455Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CashierForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CashierForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\CashierForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T06:52:17.158Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BillingForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BillingForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\BillingForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BillingForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\BillingForm.Designer.vb",
+              "ViewState": "AgIAAB8BAAAAAAAAAAAcwEsBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T08:09:27.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BillingForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BillingForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\BillingForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BillingForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\BillingForm.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T08:09:35.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BillingForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BillingForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\BillingForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BillingForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\BillingForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T08:09:09.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CashierDashboard.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierDashboard.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CashierDashboard.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierDashboard.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\CashierDashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-19T15:35:16.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CashierReportsForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierReportsForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CashierReportsForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierReportsForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\CashierReportsForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-28T14:56:46.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CashierDashboard.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierDashboard.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CashierDashboard.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierDashboard.vb",
+              "RelativeToolTip": "EnrollmentSystem\\CashierDashboard.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:48:31.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CashierForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CashierForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\CashierForm.vb",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAcwJsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-28T15:01:29.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Dean.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Dean.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\Dean.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Dean.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\Dean.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-24T10:18:38.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CashierStatistics.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierStatistics.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CashierStatistics.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierStatistics.vb",
+              "RelativeToolTip": "EnrollmentSystem\\CashierStatistics.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-28T15:00:16.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CashierReportsForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierReportsForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CashierReportsForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierReportsForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\CashierReportsForm.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-28T15:00:01.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CashierReportsForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierReportsForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CashierReportsForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierReportsForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\CashierReportsForm.Designer.vb",
+              "ViewState": "AgIAALMAAAAAAAAAAAAcwOAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-28T14:59:34.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CashierStatistics.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierStatistics.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CashierStatistics.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierStatistics.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\CashierStatistics.Designer.vb",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAgwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-28T14:59:13.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ClassListForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ClassListForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\ClassListForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ClassListForm.vb [Design]",
+              "RelativeToolTip": "EnrollmentSystem\\ClassListForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T03:03:27.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CashierDashboard.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierDashboard.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CashierDashboard.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierDashboard.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\CashierDashboard.Designer.vb",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAgwKoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-25T00:51:18.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IrregularEnrollmentForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\IrregularEnrollmentForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\IrregularEnrollmentForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\IrregularEnrollmentForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\IrregularEnrollmentForm.vb",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAewGUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-26T02:10:51.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "GradesForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\GradesForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\GradesForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\GradesForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\GradesForm.vb",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T08:13:15.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RegistrarDashboard.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\RegistrarDashboard.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\RegistrarDashboard.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\RegistrarDashboard.vb",
+              "RelativeToolTip": "EnrollmentSystem\\RegistrarDashboard.vb",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwDgAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:37:52.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "frmDashboard.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\frmDashboard.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\frmDashboard.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\frmDashboard.vb",
+              "RelativeToolTip": "EnrollmentSystem\\frmDashboard.vb",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-24T11:17:01.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ClassListForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ClassListForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\ClassListForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ClassListForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\ClassListForm.Designer.vb",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAIMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T03:03:38.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SectionForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\SectionForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\SectionForm.vb",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-25T01:45:38.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "StudentForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\StudentForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\StudentForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\StudentForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\StudentForm.vb",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAAAOUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:33:51.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SectionForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\SectionForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\SectionForm.Designer.vb",
+              "ViewState": "AgIAABABAAAAAAAAAAAgwDgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-25T01:45:53.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "StudentForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\StudentForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\StudentForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\StudentForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\StudentForm.Designer.vb",
+              "ViewState": "AgIAANQAAAAAAAAAAAAQwOgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:33:38.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "SectionForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\SectionForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\SectionForm.vb",
+              "ViewState": "AgIAALwAAAAAAAAAAAAuwNkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-25T01:49:08.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ScheduleForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ScheduleForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\ScheduleForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ScheduleForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\ScheduleForm.vb",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T06:42:14.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "UserCreationForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UserCreationForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\UserCreationForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UserCreationForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\UserCreationForm.vb",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwDYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-23T08:19:06.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "SectionScheduleForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionScheduleForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\SectionScheduleForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionScheduleForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\SectionScheduleForm.vb",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAgwLAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-25T01:54:21.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "SectionScheduleForm.resx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionScheduleForm.resx",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\SectionScheduleForm.resx",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\SectionScheduleForm.resx",
+              "RelativeToolTip": "EnrollmentSystem\\SectionScheduleForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-04-25T01:54:17.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ScheduleForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ScheduleForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\ScheduleForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ScheduleForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\ScheduleForm.Designer.vb",
+              "ViewState": "AgIAALwBAAAAAAAAAAAgwOQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T06:42:24.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "PaymentForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\PaymentForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\PaymentForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\PaymentForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\PaymentForm.vb",
+              "ViewState": "AgIAAGYAAAAAAAAAAAApwHsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T08:11:13.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Application.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\My Project\\Application.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\My Project\\Application.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\My Project\\Application.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\My Project\\Application.Designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-25T01:19:36.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "PaymentForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\PaymentForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\PaymentForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\PaymentForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\PaymentForm.Designer.vb",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAgwGUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T08:10:57.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "UsersForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UsersForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\UsersForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UsersForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\UsersForm.vb",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T07:53:26.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "RegistrarDashboard.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\RegistrarDashboard.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\RegistrarDashboard.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\RegistrarDashboard.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\RegistrarDashboard.Designer.vb",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAQwAYBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-24T14:55:51.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\App.config",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\App.config",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\App.config",
+              "RelativeToolTip": "EnrollmentSystem\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-04-19T15:35:15.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "frmDashboard.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\frmDashboard.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\frmDashboard.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\frmDashboard.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\frmDashboard.Designer.vb",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAqwL0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-24T11:17:07.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Connection.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Connection.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\Connection.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Connection.vb",
+              "RelativeToolTip": "EnrollmentSystem\\Connection.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-19T12:25:32.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "frmDashboard.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\frmDashboard.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\frmDashboard.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\frmDashboard.vb",
+              "RelativeToolTip": "EnrollmentSystem\\frmDashboard.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-24T11:17:29.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "AdminDashboard.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminDashboard.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\AdminDashboard.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminDashboard.vb",
+              "RelativeToolTip": "EnrollmentSystem\\AdminDashboard.vb",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwFQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-22T07:39:09.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "AdminDashboard.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminDashboard.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\AdminDashboard.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminDashboard.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\AdminDashboard.Designer.vb",
+              "ViewState": "AgIAAAABAAAAAAAAAAAqwCwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T07:47:20.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Form1.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\Form1.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Form1.vb",
+              "RelativeToolTip": "EnrollmentSystem\\Form1.vb",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-23T08:26:51.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ClassListForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ClassListForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\ClassListForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ClassListForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\ClassListForm.vb",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T03:03:57.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "UserCreationForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UserCreationForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\UserCreationForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UserCreationForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\UserCreationForm.Designer.vb",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAqwMwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T04:58:08.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "UsersForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UsersForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\UsersForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UsersForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\UsersForm.vb",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAqwHcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T07:53:33.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "CourseSubjectForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CourseSubjectForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CourseSubjectForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CourseSubjectForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\CourseSubjectForm.vb",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T08:06:31.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Login.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Login.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\Login.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Login.vb",
+              "RelativeToolTip": "EnrollmentSystem\\Login.vb",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-19T12:38:09.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "AnnouncementForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AnnouncementForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\AnnouncementForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AnnouncementForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\AnnouncementForm.vb",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwCMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T03:02:28.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ReportsForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ReportsForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\ReportsForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ReportsForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\ReportsForm.vb",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:57:48.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Login.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Login.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\Login.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\Login.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\Login.Designer.vb",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAqwLMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-22T07:32:34.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "EncodeGradesForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\EncodeGradesForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\EncodeGradesForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\EncodeGradesForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\EncodeGradesForm.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA+wAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-17T02:58:24.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "AnnouncementForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AnnouncementForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\AnnouncementForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AnnouncementForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\AnnouncementForm.Designer.vb",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAIwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T08:14:44.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "EncodeGradesForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\EncodeGradesForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\EncodeGradesForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\EncodeGradesForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\EncodeGradesForm.Designer.vb",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAAANcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T09:11:17.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "ReportsForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ReportsForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\ReportsForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\ReportsForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\ReportsForm.Designer.vb",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAKIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:57:15.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "CashierForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\CashierForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\CashierForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\CashierForm.Designer.vb",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAowBkBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T06:52:26.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "BalanceForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BalanceForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\BalanceForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BalanceForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\BalanceForm.vb",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:53:45.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "AdminReportsForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminReportsForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\AdminReportsForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminReportsForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\AdminReportsForm.Designer.vb",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T04:48:10.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "AdminReportsForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminReportsForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\AdminReportsForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\AdminReportsForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\AdminReportsForm.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T04:48:56.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "UsersForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UsersForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\UsersForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\UsersForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\UsersForm.Designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T07:54:41.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "GradesForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\GradesForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\GradesForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\GradesForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\GradesForm.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T03:02:16.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "GradesForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\GradesForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\GradesForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\GradesForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\GradesForm.Designer.vb",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwGMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T08:13:21.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "BalanceForm.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BalanceForm.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\BalanceForm.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BalanceForm.vb",
+              "RelativeToolTip": "EnrollmentSystem\\BalanceForm.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:55:07.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "BalanceForm.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BalanceForm.Designer.vb",
+              "RelativeDocumentMoniker": "EnrollmentSystem\\BalanceForm.Designer.vb",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\EnrollmentSystem\\EnrollmentSystem\\BalanceForm.Designer.vb",
+              "RelativeToolTip": "EnrollmentSystem\\BalanceForm.Designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-15T02:53:54.999Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
