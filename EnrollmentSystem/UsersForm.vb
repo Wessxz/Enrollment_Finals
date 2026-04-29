@@ -1,120 +1,69 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class UsersForm
-
     Private Sub UsersForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadStudents()
+        LoadPendingStudents()
     End Sub
 
-    ' =========================
-    ' LOAD STUDENTS (PENDING ONLY)
-    ' =========================
-    Private Sub LoadStudents()
-
+    ' ================= 1. DATA LOADING (FIXED QUERY) =================
+    Private Sub LoadPendingStudents()
         Try
             openCon()
+            ' FIXED: Removed 'first_name', 'last_name', and 'student_id' 
+            ' These caused the "Unknown Column" errors in your screenshots.
+            Dim query = "SELECT id, username, status FROM users WHERE status = 'PENDING' AND role = 'student'"
 
-            Dim query As String =
-"SELECT id, student_id, first_name, last_name, username, status
- FROM students
- ORDER BY status ASC, last_name ASC"
-
-            Using cmd As New MySqlCommand(query, conn)
-
-                Dim dt As New DataTable
-                Dim da As New MySqlDataAdapter(cmd)
-
-                da.Fill(dt)
-                dgvUsers.DataSource = dt
-
-            End Using
-
+            Dim da As New MySqlDataAdapter(query, conn)
+            Dim dt As New DataTable
+            da.Fill(dt)
+            dgvUsers.DataSource = dt
         Catch ex As Exception
-            MsgBox("Error loading students: " & ex.Message, MsgBoxStyle.Critical)
+            MsgBox("Database Error: " & ex.Message)
         Finally
             closeCon()
         End Try
-
     End Sub
 
-    ' =========================
-    ' REFRESH BUTTON
-    ' =========================
-    Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
-        LoadStudents()
-    End Sub
-
-    ' =========================
-    ' VERIFY STUDENT
-    ' =========================
+    ' ================= 2. VERIFICATION ACTION =================
     Private Sub btnVerify_Click(sender As Object, e As EventArgs) Handles btnVerify.Click
+        If dgvUsers.CurrentRow Is Nothing Then Return
 
-        If dgvUsers.CurrentRow Is Nothing Then
-            MsgBox("Select a student first.")
-            Exit Sub
-        End If
+        Dim uID As Integer = Convert.ToInt32(dgvUsers.CurrentRow.Cells("id").Value)
 
         Try
             openCon()
-
-            Dim studentID As Integer = Convert.ToInt32(dgvUsers.CurrentRow.Cells("id").Value)
-
-            Dim query As String =
-                "UPDATE students SET status='VERIFIED' WHERE id=@id"
-
+            Dim query = "UPDATE users SET status = 'VERIFIED' WHERE id = @id"
             Using cmd As New MySqlCommand(query, conn)
-                cmd.Parameters.AddWithValue("@id", studentID)
+                cmd.Parameters.AddWithValue("@id", uID)
                 cmd.ExecuteNonQuery()
             End Using
-
-            MsgBox("Student Verified!", MsgBoxStyle.Information)
-
-            LoadStudents()
-
+            MsgBox("Student Verified! Portal access granted.", MsgBoxStyle.Information)
+            LoadPendingStudents()
         Catch ex As Exception
-            MsgBox("Verification Error: " & ex.Message, MsgBoxStyle.Critical)
+            MsgBox("Error: " & ex.Message)
         Finally
             closeCon()
         End Try
-
     End Sub
 
-    ' =========================
-    ' REJECT STUDENT (DELETE)
-    ' =========================
+    ' ================= 3. REJECTION ACTION =================
     Private Sub btnReject_Click(sender As Object, e As EventArgs) Handles btnReject.Click
+        If dgvUsers.CurrentRow Is Nothing Then Return
+        Dim uID As Integer = Convert.ToInt32(dgvUsers.CurrentRow.Cells("id").Value)
 
-        If dgvUsers.CurrentRow Is Nothing Then
-            MsgBox("Select a student first.")
-            Exit Sub
+        If MsgBox("Reject student?", MsgBoxStyle.YesNo + MsgBoxStyle.Question) = MsgBoxResult.Yes Then
+            Try
+                openCon()
+                Using cmd As New MySqlCommand("DELETE FROM users WHERE id = @id", conn)
+                    cmd.Parameters.AddWithValue("@id", uID)
+                    cmd.ExecuteNonQuery()
+                End Using
+                LoadPendingStudents()
+            Catch ex As Exception
+                MsgBox("Error: " & ex.Message)
+            Finally
+                closeCon()
+            End Try
         End If
-
-        If MsgBox("Reject and delete this student?", MsgBoxStyle.YesNo + MsgBoxStyle.Question) = MsgBoxResult.No Then
-            Exit Sub
-        End If
-
-        Try
-            openCon()
-
-            Dim studentID As Integer = Convert.ToInt32(dgvUsers.CurrentRow.Cells("id").Value)
-
-            Dim query As String = "DELETE FROM students WHERE id=@id"
-
-            Using cmd As New MySqlCommand(query, conn)
-                cmd.Parameters.AddWithValue("@id", studentID)
-                cmd.ExecuteNonQuery()
-            End Using
-
-            MsgBox("Student Rejected & Deleted.", MsgBoxStyle.Information)
-
-            LoadStudents()
-
-        Catch ex As Exception
-            MsgBox("Rejection Error: " & ex.Message, MsgBoxStyle.Critical)
-        Finally
-            closeCon()
-        End Try
-
     End Sub
-
 End Class

@@ -4,6 +4,7 @@ Public Class Login
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
 
+        ' Basic validation
         If String.IsNullOrWhiteSpace(txtUsername.Text) OrElse String.IsNullOrWhiteSpace(txtPassword.Text) Then
             MsgBox("Please enter both username and password.", MsgBoxStyle.Exclamation)
             Exit Sub
@@ -13,11 +14,12 @@ Public Class Login
             closeCon()
             openCon()
 
+            ' Updated query to use 'id' instead of 'user_id'
             Dim query As String =
-                "SELECT role FROM users
-                 WHERE username = @username
-                 AND password_hash = @password
-                 AND status = 'VERIFIED'
+                "SELECT id, username, role FROM users 
+                 WHERE username = @username 
+                 AND password_hash = @password 
+                 AND status = 'VERIFIED' 
                  LIMIT 1"
 
             Using cmd As New MySqlCommand(query, conn)
@@ -26,11 +28,16 @@ Public Class Login
 
                 Using dr As MySqlDataReader = cmd.ExecuteReader()
                     If dr.Read() Then
+                        ' Save to Session Module
+                        UserSession.CurrentUsername = dr("username").ToString()
+                        UserSession.CurrentCashierID = Convert.ToInt32(dr("id"))
+
                         Dim role As String = dr("role").ToString()
 
                         MsgBox("Login Successful!", MsgBoxStyle.Information)
                         Me.Hide()
 
+                        ' Navigate based on role
                         Select Case role.Trim().ToLower()
                             Case "admin"
                                 Dim f As New AdminDashboard()
@@ -54,26 +61,14 @@ Public Class Login
                 End Using
             End Using
 
-        Catch ex As MySqlException
-            MsgBox("Database Error: " & ex.Message, MsgBoxStyle.Critical)
         Catch ex As Exception
-            MsgBox("System Error: " & ex.Message, MsgBoxStyle.Critical)
+            MsgBox("Database Error: " & ex.Message, MsgBoxStyle.Critical)
         Finally
             closeCon()
         End Try
-
     End Sub
 
+    ' Keep your empty Click events here so the designer doesn't break
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     End Sub
-
-    Private Sub lblTitle_Click(sender As Object, e As EventArgs) Handles lblTitle.Click
-    End Sub
-
-    Private Sub lblUsername_Click(sender As Object, e As EventArgs) Handles lblUsername.Click
-    End Sub
-
-    Private Sub lblPassword_Click(sender As Object, e As EventArgs) Handles lblPassword.Click
-    End Sub
-
 End Class

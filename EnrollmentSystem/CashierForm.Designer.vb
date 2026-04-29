@@ -7,14 +7,15 @@ Partial Class CashierForm
     Private Sub InitializeComponent()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.pnlStudent = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblHiddenBillingID = New System.Windows.Forms.TextBox()
+        Me.cmbStudentID = New System.Windows.Forms.ComboBox()
         Me.lblStudentID = New System.Windows.Forms.Label()
-        Me.txtStudentID = New System.Windows.Forms.TextBox()
-        Me.btnSearch = New System.Windows.Forms.Button()
         Me.lblStudentName = New System.Windows.Forms.Label()
         Me.txtStudentName = New System.Windows.Forms.TextBox()
         Me.lblCourse = New System.Windows.Forms.Label()
         Me.txtCourse = New System.Windows.Forms.TextBox()
-        Me.pnlPayment = New System.Windows.Forms.Panel()
+        Me.pnlTuitionSection = New System.Windows.Forms.Panel()
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.txtTotal = New System.Windows.Forms.TextBox()
         Me.lblPaid = New System.Windows.Forms.Label()
@@ -23,28 +24,31 @@ Partial Class CashierForm
         Me.txtBalance = New System.Windows.Forms.TextBox()
         Me.lblAmount = New System.Windows.Forms.Label()
         Me.txtAmount = New System.Windows.Forms.TextBox()
-        Me.lblType = New System.Windows.Forms.Label()
-        Me.cmbType = New System.Windows.Forms.ComboBox()
         Me.btnPay = New System.Windows.Forms.Button()
-        Me.btnClear = New System.Windows.Forms.Button()
         Me.btnReceipt = New System.Windows.Forms.Button()
+        Me.txtTransactionDate = New System.Windows.Forms.TextBox()
         Me.lblOR = New System.Windows.Forms.Label()
         Me.txtOR = New System.Windows.Forms.TextBox()
         Me.lblDate = New System.Windows.Forms.Label()
-        Me.dtpDate = New System.Windows.Forms.DateTimePicker()
         Me.lblCashier = New System.Windows.Forms.Label()
         Me.txtCashier = New System.Windows.Forms.TextBox()
         Me.lblStatus = New System.Windows.Forms.Label()
         Me.txtStatus = New System.Windows.Forms.TextBox()
+        Me.dtpDate = New System.Windows.Forms.DateTimePicker()
         Me.pnlHistory = New System.Windows.Forms.Panel()
         Me.lblHistory = New System.Windows.Forms.Label()
         Me.dgvHistory = New System.Windows.Forms.DataGridView()
         Me.txtSearchHistory = New System.Windows.Forms.TextBox()
         Me.btnSearchHistory = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnDownPayment = New System.Windows.Forms.Button()
+        Me.txtDownpayment = New System.Windows.Forms.TextBox()
+        Me.grpDownPayment = New System.Windows.Forms.GroupBox()
         Me.pnlStudent.SuspendLayout()
-        Me.pnlPayment.SuspendLayout()
+        Me.pnlTuitionSection.SuspendLayout()
         Me.pnlHistory.SuspendLayout()
         CType(Me.dgvHistory, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.grpDownPayment.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -60,40 +64,50 @@ Partial Class CashierForm
         'pnlStudent
         '
         Me.pnlStudent.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.pnlStudent.Controls.Add(Me.Label1)
+        Me.pnlStudent.Controls.Add(Me.lblHiddenBillingID)
+        Me.pnlStudent.Controls.Add(Me.cmbStudentID)
         Me.pnlStudent.Controls.Add(Me.lblStudentID)
-        Me.pnlStudent.Controls.Add(Me.txtStudentID)
-        Me.pnlStudent.Controls.Add(Me.btnSearch)
         Me.pnlStudent.Controls.Add(Me.lblStudentName)
         Me.pnlStudent.Controls.Add(Me.txtStudentName)
         Me.pnlStudent.Controls.Add(Me.lblCourse)
         Me.pnlStudent.Controls.Add(Me.txtCourse)
         Me.pnlStudent.Location = New System.Drawing.Point(20, 80)
         Me.pnlStudent.Name = "pnlStudent"
-        Me.pnlStudent.Size = New System.Drawing.Size(300, 580)
+        Me.pnlStudent.Size = New System.Drawing.Size(300, 592)
         Me.pnlStudent.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.Location = New System.Drawing.Point(20, 300)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(100, 23)
+        Me.Label1.TabIndex = 22
+        Me.Label1.Text = "Billing ID"
+        '
+        'lblHiddenBillingID
+        '
+        Me.lblHiddenBillingID.Location = New System.Drawing.Point(23, 332)
+        Me.lblHiddenBillingID.Name = "lblHiddenBillingID"
+        Me.lblHiddenBillingID.ReadOnly = True
+        Me.lblHiddenBillingID.Size = New System.Drawing.Size(200, 22)
+        Me.lblHiddenBillingID.TabIndex = 22
+        '
+        'cmbStudentID
+        '
+        Me.cmbStudentID.FormattingEnabled = True
+        Me.cmbStudentID.Location = New System.Drawing.Point(23, 103)
+        Me.cmbStudentID.Name = "cmbStudentID"
+        Me.cmbStudentID.Size = New System.Drawing.Size(247, 24)
+        Me.cmbStudentID.TabIndex = 7
         '
         'lblStudentID
         '
-        Me.lblStudentID.Location = New System.Drawing.Point(20, 20)
+        Me.lblStudentID.Location = New System.Drawing.Point(20, 77)
         Me.lblStudentID.Name = "lblStudentID"
         Me.lblStudentID.Size = New System.Drawing.Size(100, 23)
         Me.lblStudentID.TabIndex = 0
         Me.lblStudentID.Text = "Student ID"
-        '
-        'txtStudentID
-        '
-        Me.txtStudentID.Location = New System.Drawing.Point(20, 50)
-        Me.txtStudentID.Name = "txtStudentID"
-        Me.txtStudentID.Size = New System.Drawing.Size(180, 22)
-        Me.txtStudentID.TabIndex = 1
-        '
-        'btnSearch
-        '
-        Me.btnSearch.Location = New System.Drawing.Point(20, 85)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(75, 23)
-        Me.btnSearch.TabIndex = 2
-        Me.btnSearch.Text = "Search"
         '
         'lblStudentName
         '
@@ -125,33 +139,22 @@ Partial Class CashierForm
         Me.txtCourse.Size = New System.Drawing.Size(250, 22)
         Me.txtCourse.TabIndex = 6
         '
-        'pnlPayment
+        'pnlTuitionSection
         '
-        Me.pnlPayment.Controls.Add(Me.lblTotal)
-        Me.pnlPayment.Controls.Add(Me.txtTotal)
-        Me.pnlPayment.Controls.Add(Me.lblPaid)
-        Me.pnlPayment.Controls.Add(Me.txtPaid)
-        Me.pnlPayment.Controls.Add(Me.lblBalance)
-        Me.pnlPayment.Controls.Add(Me.txtBalance)
-        Me.pnlPayment.Controls.Add(Me.lblAmount)
-        Me.pnlPayment.Controls.Add(Me.txtAmount)
-        Me.pnlPayment.Controls.Add(Me.lblType)
-        Me.pnlPayment.Controls.Add(Me.cmbType)
-        Me.pnlPayment.Controls.Add(Me.btnPay)
-        Me.pnlPayment.Controls.Add(Me.btnClear)
-        Me.pnlPayment.Controls.Add(Me.btnReceipt)
-        Me.pnlPayment.Controls.Add(Me.lblOR)
-        Me.pnlPayment.Controls.Add(Me.txtOR)
-        Me.pnlPayment.Controls.Add(Me.lblDate)
-        Me.pnlPayment.Controls.Add(Me.dtpDate)
-        Me.pnlPayment.Controls.Add(Me.lblCashier)
-        Me.pnlPayment.Controls.Add(Me.txtCashier)
-        Me.pnlPayment.Controls.Add(Me.lblStatus)
-        Me.pnlPayment.Controls.Add(Me.txtStatus)
-        Me.pnlPayment.Location = New System.Drawing.Point(340, 80)
-        Me.pnlPayment.Name = "pnlPayment"
-        Me.pnlPayment.Size = New System.Drawing.Size(380, 580)
-        Me.pnlPayment.TabIndex = 2
+        Me.pnlTuitionSection.Controls.Add(Me.lblTotal)
+        Me.pnlTuitionSection.Controls.Add(Me.txtTotal)
+        Me.pnlTuitionSection.Controls.Add(Me.lblPaid)
+        Me.pnlTuitionSection.Controls.Add(Me.txtPaid)
+        Me.pnlTuitionSection.Controls.Add(Me.lblBalance)
+        Me.pnlTuitionSection.Controls.Add(Me.txtBalance)
+        Me.pnlTuitionSection.Controls.Add(Me.lblAmount)
+        Me.pnlTuitionSection.Controls.Add(Me.txtAmount)
+        Me.pnlTuitionSection.Controls.Add(Me.btnPay)
+        Me.pnlTuitionSection.Controls.Add(Me.btnReceipt)
+        Me.pnlTuitionSection.Location = New System.Drawing.Point(340, 80)
+        Me.pnlTuitionSection.Name = "pnlTuitionSection"
+        Me.pnlTuitionSection.Size = New System.Drawing.Size(380, 315)
+        Me.pnlTuitionSection.TabIndex = 2
         '
         'lblTotal
         '
@@ -165,6 +168,7 @@ Partial Class CashierForm
         '
         Me.txtTotal.Location = New System.Drawing.Point(20, 50)
         Me.txtTotal.Name = "txtTotal"
+        Me.txtTotal.ReadOnly = True
         Me.txtTotal.Size = New System.Drawing.Size(200, 22)
         Me.txtTotal.TabIndex = 1
         '
@@ -180,6 +184,7 @@ Partial Class CashierForm
         '
         Me.txtPaid.Location = New System.Drawing.Point(20, 120)
         Me.txtPaid.Name = "txtPaid"
+        Me.txtPaid.ReadOnly = True
         Me.txtPaid.Size = New System.Drawing.Size(200, 22)
         Me.txtPaid.TabIndex = 3
         '
@@ -195,6 +200,7 @@ Partial Class CashierForm
         '
         Me.txtBalance.Location = New System.Drawing.Point(20, 190)
         Me.txtBalance.Name = "txtBalance"
+        Me.txtBalance.ReadOnly = True
         Me.txtBalance.Size = New System.Drawing.Size(200, 22)
         Me.txtBalance.TabIndex = 5
         '
@@ -213,55 +219,39 @@ Partial Class CashierForm
         Me.txtAmount.Size = New System.Drawing.Size(200, 22)
         Me.txtAmount.TabIndex = 7
         '
-        'lblType
-        '
-        Me.lblType.Location = New System.Drawing.Point(20, 300)
-        Me.lblType.Name = "lblType"
-        Me.lblType.Size = New System.Drawing.Size(100, 23)
-        Me.lblType.TabIndex = 8
-        Me.lblType.Text = "Payment Type"
-        '
-        'cmbType
-        '
-        Me.cmbType.Items.AddRange(New Object() {"Cash", "Partial", "Full"})
-        Me.cmbType.Location = New System.Drawing.Point(20, 330)
-        Me.cmbType.Name = "cmbType"
-        Me.cmbType.Size = New System.Drawing.Size(200, 24)
-        Me.cmbType.TabIndex = 9
-        '
         'btnPay
         '
         Me.btnPay.BackColor = System.Drawing.Color.Green
         Me.btnPay.ForeColor = System.Drawing.Color.White
-        Me.btnPay.Location = New System.Drawing.Point(20, 370)
+        Me.btnPay.Location = New System.Drawing.Point(275, 49)
         Me.btnPay.Name = "btnPay"
         Me.btnPay.Size = New System.Drawing.Size(75, 23)
         Me.btnPay.TabIndex = 10
         Me.btnPay.Text = "PAY"
         Me.btnPay.UseVisualStyleBackColor = False
         '
-        'btnClear
-        '
-        Me.btnClear.Location = New System.Drawing.Point(120, 370)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(75, 23)
-        Me.btnClear.TabIndex = 11
-        Me.btnClear.Text = "CLEAR"
-        '
         'btnReceipt
         '
         Me.btnReceipt.BackColor = System.Drawing.Color.Blue
         Me.btnReceipt.ForeColor = System.Drawing.Color.White
-        Me.btnReceipt.Location = New System.Drawing.Point(20, 410)
+        Me.btnReceipt.Location = New System.Drawing.Point(275, 90)
         Me.btnReceipt.Name = "btnReceipt"
         Me.btnReceipt.Size = New System.Drawing.Size(75, 23)
         Me.btnReceipt.TabIndex = 12
         Me.btnReceipt.Text = "RECEIPT"
         Me.btnReceipt.UseVisualStyleBackColor = False
         '
+        'txtTransactionDate
+        '
+        Me.txtTransactionDate.Location = New System.Drawing.Point(545, 541)
+        Me.txtTransactionDate.Name = "txtTransactionDate"
+        Me.txtTransactionDate.ReadOnly = True
+        Me.txtTransactionDate.Size = New System.Drawing.Size(150, 22)
+        Me.txtTransactionDate.TabIndex = 21
+        '
         'lblOR
         '
-        Me.lblOR.Location = New System.Drawing.Point(20, 460)
+        Me.lblOR.Location = New System.Drawing.Point(365, 515)
         Me.lblOR.Name = "lblOR"
         Me.lblOR.Size = New System.Drawing.Size(100, 23)
         Me.lblOR.TabIndex = 13
@@ -269,29 +259,23 @@ Partial Class CashierForm
         '
         'txtOR
         '
-        Me.txtOR.Location = New System.Drawing.Point(20, 490)
+        Me.txtOR.Location = New System.Drawing.Point(365, 545)
         Me.txtOR.Name = "txtOR"
+        Me.txtOR.ReadOnly = True
         Me.txtOR.Size = New System.Drawing.Size(150, 22)
         Me.txtOR.TabIndex = 14
         '
         'lblDate
         '
-        Me.lblDate.Location = New System.Drawing.Point(200, 460)
+        Me.lblDate.Location = New System.Drawing.Point(545, 515)
         Me.lblDate.Name = "lblDate"
         Me.lblDate.Size = New System.Drawing.Size(100, 23)
         Me.lblDate.TabIndex = 15
         Me.lblDate.Text = "Date"
         '
-        'dtpDate
-        '
-        Me.dtpDate.Location = New System.Drawing.Point(200, 490)
-        Me.dtpDate.Name = "dtpDate"
-        Me.dtpDate.Size = New System.Drawing.Size(200, 22)
-        Me.dtpDate.TabIndex = 16
-        '
         'lblCashier
         '
-        Me.lblCashier.Location = New System.Drawing.Point(20, 530)
+        Me.lblCashier.Location = New System.Drawing.Point(365, 589)
         Me.lblCashier.Name = "lblCashier"
         Me.lblCashier.Size = New System.Drawing.Size(100, 23)
         Me.lblCashier.TabIndex = 17
@@ -299,14 +283,15 @@ Partial Class CashierForm
         '
         'txtCashier
         '
-        Me.txtCashier.Location = New System.Drawing.Point(20, 560)
+        Me.txtCashier.Location = New System.Drawing.Point(365, 615)
         Me.txtCashier.Name = "txtCashier"
+        Me.txtCashier.ReadOnly = True
         Me.txtCashier.Size = New System.Drawing.Size(150, 22)
         Me.txtCashier.TabIndex = 18
         '
         'lblStatus
         '
-        Me.lblStatus.Location = New System.Drawing.Point(200, 530)
+        Me.lblStatus.Location = New System.Drawing.Point(545, 589)
         Me.lblStatus.Name = "lblStatus"
         Me.lblStatus.Size = New System.Drawing.Size(100, 23)
         Me.lblStatus.TabIndex = 19
@@ -314,11 +299,18 @@ Partial Class CashierForm
         '
         'txtStatus
         '
-        Me.txtStatus.Location = New System.Drawing.Point(200, 560)
+        Me.txtStatus.Location = New System.Drawing.Point(545, 615)
         Me.txtStatus.Name = "txtStatus"
         Me.txtStatus.ReadOnly = True
         Me.txtStatus.Size = New System.Drawing.Size(150, 22)
         Me.txtStatus.TabIndex = 20
+        '
+        'dtpDate
+        '
+        Me.dtpDate.Location = New System.Drawing.Point(20, 539)
+        Me.dtpDate.Name = "dtpDate"
+        Me.dtpDate.Size = New System.Drawing.Size(200, 22)
+        Me.dtpDate.TabIndex = 16
         '
         'pnlHistory
         '
@@ -327,9 +319,10 @@ Partial Class CashierForm
         Me.pnlHistory.Controls.Add(Me.dgvHistory)
         Me.pnlHistory.Controls.Add(Me.txtSearchHistory)
         Me.pnlHistory.Controls.Add(Me.btnSearchHistory)
+        Me.pnlHistory.Controls.Add(Me.dtpDate)
         Me.pnlHistory.Location = New System.Drawing.Point(740, 80)
         Me.pnlHistory.Name = "pnlHistory"
-        Me.pnlHistory.Size = New System.Drawing.Size(330, 580)
+        Me.pnlHistory.Size = New System.Drawing.Size(452, 580)
         Me.pnlHistory.TabIndex = 3
         '
         'lblHistory
@@ -347,7 +340,7 @@ Partial Class CashierForm
         Me.dgvHistory.Location = New System.Drawing.Point(20, 50)
         Me.dgvHistory.Name = "dgvHistory"
         Me.dgvHistory.RowHeadersWidth = 51
-        Me.dgvHistory.Size = New System.Drawing.Size(290, 450)
+        Me.dgvHistory.Size = New System.Drawing.Size(416, 450)
         Me.dgvHistory.TabIndex = 1
         '
         'txtSearchHistory
@@ -365,24 +358,72 @@ Partial Class CashierForm
         Me.btnSearchHistory.TabIndex = 3
         Me.btnSearchHistory.Text = "Search"
         '
+        'Label2
+        '
+        Me.Label2.Location = New System.Drawing.Point(20, 19)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(184, 23)
+        Me.Label2.TabIndex = 23
+        Me.Label2.Text = "Down Payment (min. ₱3,000)"
+        '
+        'btnDownPayment
+        '
+        Me.btnDownPayment.BackColor = System.Drawing.Color.Green
+        Me.btnDownPayment.ForeColor = System.Drawing.Color.White
+        Me.btnDownPayment.Location = New System.Drawing.Point(262, 35)
+        Me.btnDownPayment.Name = "btnDownPayment"
+        Me.btnDownPayment.Size = New System.Drawing.Size(75, 23)
+        Me.btnDownPayment.TabIndex = 24
+        Me.btnDownPayment.Text = "DOWN"
+        Me.btnDownPayment.UseVisualStyleBackColor = False
+        '
+        'txtDownpayment
+        '
+        Me.txtDownpayment.Location = New System.Drawing.Point(19, 45)
+        Me.txtDownpayment.Name = "txtDownpayment"
+        Me.txtDownpayment.Size = New System.Drawing.Size(200, 22)
+        Me.txtDownpayment.TabIndex = 25
+        '
+        'grpDownPayment
+        '
+        Me.grpDownPayment.Controls.Add(Me.txtDownpayment)
+        Me.grpDownPayment.Controls.Add(Me.btnDownPayment)
+        Me.grpDownPayment.Controls.Add(Me.Label2)
+        Me.grpDownPayment.Location = New System.Drawing.Point(340, 412)
+        Me.grpDownPayment.Name = "grpDownPayment"
+        Me.grpDownPayment.Size = New System.Drawing.Size(380, 84)
+        Me.grpDownPayment.TabIndex = 26
+        Me.grpDownPayment.TabStop = False
+        '
         'CashierForm
         '
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1100, 700)
+        Me.ClientSize = New System.Drawing.Size(1204, 747)
+        Me.Controls.Add(Me.grpDownPayment)
+        Me.Controls.Add(Me.txtStatus)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.pnlStudent)
-        Me.Controls.Add(Me.pnlPayment)
+        Me.Controls.Add(Me.lblStatus)
+        Me.Controls.Add(Me.pnlTuitionSection)
         Me.Controls.Add(Me.pnlHistory)
+        Me.Controls.Add(Me.lblDate)
+        Me.Controls.Add(Me.txtCashier)
+        Me.Controls.Add(Me.txtTransactionDate)
+        Me.Controls.Add(Me.lblOR)
+        Me.Controls.Add(Me.lblCashier)
+        Me.Controls.Add(Me.txtOR)
         Me.Name = "CashierForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cashier Module"
         Me.pnlStudent.ResumeLayout(False)
         Me.pnlStudent.PerformLayout()
-        Me.pnlPayment.ResumeLayout(False)
-        Me.pnlPayment.PerformLayout()
+        Me.pnlTuitionSection.ResumeLayout(False)
+        Me.pnlTuitionSection.PerformLayout()
         Me.pnlHistory.ResumeLayout(False)
         Me.pnlHistory.PerformLayout()
         CType(Me.dgvHistory, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.grpDownPayment.ResumeLayout(False)
+        Me.grpDownPayment.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -392,12 +433,10 @@ Partial Class CashierForm
     Friend WithEvents lblTitle As Label
 
     Friend WithEvents pnlStudent As Panel
-    Friend WithEvents pnlPayment As Panel
+    Friend WithEvents pnlTuitionSection As Panel
     Friend WithEvents pnlHistory As Panel
 
     Friend WithEvents lblStudentID As Label
-    Friend WithEvents txtStudentID As TextBox
-    Friend WithEvents btnSearch As Button
 
     Friend WithEvents lblStudentName As Label
     Friend WithEvents txtStudentName As TextBox
@@ -413,11 +452,8 @@ Partial Class CashierForm
 
     Friend WithEvents lblAmount As Label
     Friend WithEvents txtAmount As TextBox
-    Friend WithEvents lblType As Label
-    Friend WithEvents cmbType As ComboBox
 
     Friend WithEvents btnPay As Button
-    Friend WithEvents btnClear As Button
     Friend WithEvents btnReceipt As Button
 
     Friend WithEvents lblOR As Label
@@ -433,5 +469,12 @@ Partial Class CashierForm
     Friend WithEvents dgvHistory As DataGridView
     Friend WithEvents txtSearchHistory As TextBox
     Friend WithEvents btnSearchHistory As Button
-
+    Friend WithEvents cmbStudentID As ComboBox
+    Friend WithEvents txtTransactionDate As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lblHiddenBillingID As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents btnDownPayment As Button
+    Friend WithEvents txtDownpayment As TextBox
+    Friend WithEvents grpDownPayment As GroupBox
 End Class
