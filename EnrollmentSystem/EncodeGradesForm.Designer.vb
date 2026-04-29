@@ -4,6 +4,16 @@ Partial Class EncodeGradesForm
 
     Private components As System.ComponentModel.IContainer
 
+    Protected Overrides Sub Dispose(disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblTitle = New System.Windows.Forms.Label()
@@ -16,17 +26,12 @@ Partial Class EncodeGradesForm
         Me.lblCourse = New System.Windows.Forms.Label()
         Me.txtCourse = New System.Windows.Forms.TextBox()
         Me.pnlGrades = New System.Windows.Forms.Panel()
+        Me.lblGrade = New System.Windows.Forms.Label()
+        Me.txtGrade = New System.Windows.Forms.TextBox()
+        Me.cmbterm = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.lblSubject = New System.Windows.Forms.Label()
         Me.cmbSubject = New System.Windows.Forms.ComboBox()
-        Me.lblPrelim = New System.Windows.Forms.Label()
-        Me.txtPrelim = New System.Windows.Forms.TextBox()
-        Me.lblMidterm = New System.Windows.Forms.Label()
-        Me.txtMidterm = New System.Windows.Forms.TextBox()
-        Me.lblFinal = New System.Windows.Forms.Label()
-        Me.txtFinal = New System.Windows.Forms.TextBox()
-        Me.lblFinalGrade = New System.Windows.Forms.Label()
-        Me.txtFinalGrade = New System.Windows.Forms.TextBox()
-        Me.btnCompute = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.dgvGrades = New System.Windows.Forms.DataGridView()
@@ -95,6 +100,7 @@ Partial Class EncodeGradesForm
         '
         Me.txtStudentName.Location = New System.Drawing.Point(300, 40)
         Me.txtStudentName.Name = "txtStudentName"
+        Me.txtStudentName.ReadOnly = True
         Me.txtStudentName.Size = New System.Drawing.Size(250, 22)
         Me.txtStudentName.TabIndex = 4
         '
@@ -110,29 +116,56 @@ Partial Class EncodeGradesForm
         '
         Me.txtCourse.Location = New System.Drawing.Point(600, 40)
         Me.txtCourse.Name = "txtCourse"
+        Me.txtCourse.ReadOnly = True
         Me.txtCourse.Size = New System.Drawing.Size(150, 22)
         Me.txtCourse.TabIndex = 6
         '
         'pnlGrades
         '
         Me.pnlGrades.BackColor = System.Drawing.Color.White
+        Me.pnlGrades.Controls.Add(Me.lblGrade)
+        Me.pnlGrades.Controls.Add(Me.txtGrade)
+        Me.pnlGrades.Controls.Add(Me.cmbterm)
+        Me.pnlGrades.Controls.Add(Me.Label1)
         Me.pnlGrades.Controls.Add(Me.lblSubject)
         Me.pnlGrades.Controls.Add(Me.cmbSubject)
-        Me.pnlGrades.Controls.Add(Me.lblPrelim)
-        Me.pnlGrades.Controls.Add(Me.txtPrelim)
-        Me.pnlGrades.Controls.Add(Me.lblMidterm)
-        Me.pnlGrades.Controls.Add(Me.txtMidterm)
-        Me.pnlGrades.Controls.Add(Me.lblFinal)
-        Me.pnlGrades.Controls.Add(Me.txtFinal)
-        Me.pnlGrades.Controls.Add(Me.lblFinalGrade)
-        Me.pnlGrades.Controls.Add(Me.txtFinalGrade)
-        Me.pnlGrades.Controls.Add(Me.btnCompute)
         Me.pnlGrades.Controls.Add(Me.btnSave)
         Me.pnlGrades.Controls.Add(Me.btnClear)
         Me.pnlGrades.Location = New System.Drawing.Point(20, 210)
         Me.pnlGrades.Name = "pnlGrades"
         Me.pnlGrades.Size = New System.Drawing.Size(1040, 160)
         Me.pnlGrades.TabIndex = 2
+        '
+        'lblGrade
+        '
+        Me.lblGrade.Location = New System.Drawing.Point(540, 15)
+        Me.lblGrade.Name = "lblGrade"
+        Me.lblGrade.Size = New System.Drawing.Size(100, 23)
+        Me.lblGrade.TabIndex = 15
+        Me.lblGrade.Text = "Grade"
+        '
+        'txtGrade
+        '
+        Me.txtGrade.Location = New System.Drawing.Point(540, 41)
+        Me.txtGrade.Name = "txtGrade"
+        Me.txtGrade.Size = New System.Drawing.Size(120, 22)
+        Me.txtGrade.TabIndex = 16
+        '
+        'cmbterm
+        '
+        Me.cmbterm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbterm.Location = New System.Drawing.Point(303, 41)
+        Me.cmbterm.Name = "cmbterm"
+        Me.cmbterm.Size = New System.Drawing.Size(200, 24)
+        Me.cmbterm.TabIndex = 14
+        '
+        'Label1
+        '
+        Me.Label1.Location = New System.Drawing.Point(297, 15)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(100, 23)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Term"
         '
         'lblSubject
         '
@@ -144,102 +177,52 @@ Partial Class EncodeGradesForm
         '
         'cmbSubject
         '
+        Me.cmbSubject.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbSubject.Location = New System.Drawing.Point(20, 40)
         Me.cmbSubject.Name = "cmbSubject"
-        Me.cmbSubject.Size = New System.Drawing.Size(200, 24)
+        Me.cmbSubject.Size = New System.Drawing.Size(250, 24)
         Me.cmbSubject.TabIndex = 1
-        '
-        'lblPrelim
-        '
-        Me.lblPrelim.Location = New System.Drawing.Point(250, 15)
-        Me.lblPrelim.Name = "lblPrelim"
-        Me.lblPrelim.Size = New System.Drawing.Size(100, 23)
-        Me.lblPrelim.TabIndex = 2
-        Me.lblPrelim.Text = "Prelim"
-        '
-        'txtPrelim
-        '
-        Me.txtPrelim.Location = New System.Drawing.Point(250, 40)
-        Me.txtPrelim.Name = "txtPrelim"
-        Me.txtPrelim.Size = New System.Drawing.Size(100, 22)
-        Me.txtPrelim.TabIndex = 3
-        '
-        'lblMidterm
-        '
-        Me.lblMidterm.Location = New System.Drawing.Point(380, 15)
-        Me.lblMidterm.Name = "lblMidterm"
-        Me.lblMidterm.Size = New System.Drawing.Size(100, 23)
-        Me.lblMidterm.TabIndex = 4
-        Me.lblMidterm.Text = "Midterm"
-        '
-        'txtMidterm
-        '
-        Me.txtMidterm.Location = New System.Drawing.Point(380, 40)
-        Me.txtMidterm.Name = "txtMidterm"
-        Me.txtMidterm.Size = New System.Drawing.Size(100, 22)
-        Me.txtMidterm.TabIndex = 5
-        '
-        'lblFinal
-        '
-        Me.lblFinal.Location = New System.Drawing.Point(510, 15)
-        Me.lblFinal.Name = "lblFinal"
-        Me.lblFinal.Size = New System.Drawing.Size(100, 23)
-        Me.lblFinal.TabIndex = 6
-        Me.lblFinal.Text = "Final"
-        '
-        'txtFinal
-        '
-        Me.txtFinal.Location = New System.Drawing.Point(510, 40)
-        Me.txtFinal.Name = "txtFinal"
-        Me.txtFinal.Size = New System.Drawing.Size(100, 22)
-        Me.txtFinal.TabIndex = 7
-        '
-        'lblFinalGrade
-        '
-        Me.lblFinalGrade.Location = New System.Drawing.Point(640, 15)
-        Me.lblFinalGrade.Name = "lblFinalGrade"
-        Me.lblFinalGrade.Size = New System.Drawing.Size(100, 23)
-        Me.lblFinalGrade.TabIndex = 8
-        Me.lblFinalGrade.Text = "Final Grade"
-        '
-        'txtFinalGrade
-        '
-        Me.txtFinalGrade.Location = New System.Drawing.Point(640, 40)
-        Me.txtFinalGrade.Name = "txtFinalGrade"
-        Me.txtFinalGrade.ReadOnly = True
-        Me.txtFinalGrade.Size = New System.Drawing.Size(120, 22)
-        Me.txtFinalGrade.TabIndex = 9
-        '
-        'btnCompute
-        '
-        Me.btnCompute.Location = New System.Drawing.Point(20, 90)
-        Me.btnCompute.Name = "btnCompute"
-        Me.btnCompute.Size = New System.Drawing.Size(75, 23)
-        Me.btnCompute.TabIndex = 10
-        Me.btnCompute.Text = "Compute"
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(120, 90)
+        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(96, Byte), Integer))
+        Me.btnSave.FlatAppearance.BorderSize = 0
+        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSave.ForeColor = System.Drawing.Color.White
+        Me.btnSave.Location = New System.Drawing.Point(20, 90)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(75, 23)
+        Me.btnSave.Size = New System.Drawing.Size(100, 35)
         Me.btnSave.TabIndex = 11
-        Me.btnSave.Text = "Save"
+        Me.btnSave.Text = "Save Grade"
+        Me.btnSave.UseVisualStyleBackColor = False
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(200, 90)
+        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(166, Byte), Integer))
+        Me.btnClear.FlatAppearance.BorderSize = 0
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.ForeColor = System.Drawing.Color.White
+        Me.btnClear.Location = New System.Drawing.Point(140, 90)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.Size = New System.Drawing.Size(100, 35)
         Me.btnClear.TabIndex = 12
         Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'dgvGrades
         '
-        Me.dgvGrades.ColumnHeadersHeight = 29
+        Me.dgvGrades.AllowUserToAddRows = False
+        Me.dgvGrades.AllowUserToDeleteRows = False
+        Me.dgvGrades.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvGrades.BackgroundColor = System.Drawing.Color.White
+        Me.dgvGrades.ColumnHeadersHeight = 35
         Me.dgvGrades.Location = New System.Drawing.Point(20, 390)
         Me.dgvGrades.Name = "dgvGrades"
+        Me.dgvGrades.ReadOnly = True
+        Me.dgvGrades.RowHeadersVisible = False
         Me.dgvGrades.RowHeadersWidth = 51
+        Me.dgvGrades.RowTemplate.Height = 30
+        Me.dgvGrades.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvGrades.Size = New System.Drawing.Size(1040, 230)
         Me.dgvGrades.TabIndex = 3
         '
@@ -265,39 +248,23 @@ Partial Class EncodeGradesForm
     End Sub
 
     Friend WithEvents lblTitle As Label
-
     Friend WithEvents pnlTop As Panel
     Friend WithEvents pnlGrades As Panel
-
     Friend WithEvents lblStudentID As Label
     Friend WithEvents txtStudentID As TextBox
     Friend WithEvents btnSearch As Button
-
     Friend WithEvents lblStudentName As Label
     Friend WithEvents txtStudentName As TextBox
-
     Friend WithEvents lblCourse As Label
     Friend WithEvents txtCourse As TextBox
-
     Friend WithEvents lblSubject As Label
     Friend WithEvents cmbSubject As ComboBox
-
-    Friend WithEvents lblPrelim As Label
-    Friend WithEvents txtPrelim As TextBox
-
-    Friend WithEvents lblMidterm As Label
-    Friend WithEvents txtMidterm As TextBox
-
-    Friend WithEvents lblFinal As Label
-    Friend WithEvents txtFinal As TextBox
-
-    Friend WithEvents lblFinalGrade As Label
-    Friend WithEvents txtFinalGrade As TextBox
-
-    Friend WithEvents btnCompute As Button
     Friend WithEvents btnSave As Button
     Friend WithEvents btnClear As Button
-
     Friend WithEvents dgvGrades As DataGridView
+    Friend WithEvents Label1 As Label
+    Friend WithEvents cmbterm As ComboBox
+    Friend WithEvents lblGrade As Label
+    Friend WithEvents txtGrade As TextBox
 
 End Class

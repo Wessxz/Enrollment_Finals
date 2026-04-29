@@ -383,6 +383,12 @@
     <Compile Include="StudentForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="StudentMasterlistForm.Designer.vb">
+      <DependentUpon>StudentMasterlistForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMasterlistForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SubjectForm.Designer.vb">
       <DependentUpon>SubjectForm.vb</DependentUpon>
     </Compile>

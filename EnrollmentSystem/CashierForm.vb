@@ -133,39 +133,67 @@ Public Class CashierForm
         End Try
     End Sub
 
-    ' ================= 4. ENROLLMENT HELPER (FIXED FOR FK ERRORS) =================
+    ' ================= 4. ENROLLMENT HELPER =================
     Private Sub RegisterEnrollment(studentID As String)
-        ' FIXED: Prevents Foreign Key Failure by converting course name to numerical ID
         Try
-            ' 1. Check if already enrolled
-            Dim checkQuery As String = "SELECT COUNT(*) FROM enrollments WHERE student_id = @sid"
-            Using cmdCheck As New MySqlCommand(checkQuery, conn)
+            ' ── Step 1: Check if enrollment already exists ──
+            Dim enrollmentId As Integer = 0
+            Using cmdCheck As New MySqlCommand(
+                "SELECT enrollment_id FROM enrollments WHERE student_id = @sid LIMIT 1", conn)
                 cmdCheck.Parameters.AddWithValue("@sid", studentID)
-                If Convert.ToInt32(cmdCheck.ExecuteScalar()) > 0 Then Return
-            End Using
-
-            ' 2. Get Numerical course_id from the 'courses' table
-            Dim actualCourseID As Integer = 0
-            Dim getCourseQuery As String = "SELECT course_id FROM courses WHERE course_name = @cname"
-            Using cmdGet As New MySqlCommand(getCourseQuery, conn)
-                cmdGet.Parameters.AddWithValue("@cname", txtCourse.Text)
-                Dim result = cmdGet.ExecuteScalar()
-                If result IsNot Nothing Then
-                    actualCourseID = Convert.ToInt32(result)
-                Else
-                    ' Default to 1 if not found, or handle error
-                    actualCourseID = 1
+                Dim result = cmdCheck.ExecuteScalar()
+                If result IsNot Nothing AndAlso Not IsDBNull(result) Then
+                    enrollmentId = Convert.ToInt32(result)
                 End If
             End Using
 
-            ' 3. Insert into enrollments table using the plural table name
-            Dim enrollQuery As String = "INSERT INTO enrollments (student_id, course_id, semester, academic_year, status, date_enrolled) " &
-                                       "VALUES (@sid, @cid, '1st Semester', '2025-2026', 'ENROLLED', NOW())"
-            Using cmdEnroll As New MySqlCommand(enrollQuery, conn)
-                cmdEnroll.Parameters.AddWithValue("@sid", studentID)
-                cmdEnroll.Parameters.AddWithValue("@cid", actualCourseID)
-                cmdEnroll.ExecuteNonQuery()
+            ' ── Step 2: If no enrollment yet, create one ──
+            If enrollmentId = 0 Then
+                Dim courseId As Integer = 1
+                Using cmdCourse As New MySqlCommand(
+                    "SELECT course_id FROM courses WHERE course_code = @code OR course_name = @code LIMIT 1", conn)
+                    cmdCourse.Parameters.AddWithValue("@code", txtCourse.Text.Trim())
+                    Dim res = cmdCourse.ExecuteScalar()
+                    If res IsNot Nothing AndAlso Not IsDBNull(res) Then
+                        courseId = Convert.ToInt32(res)
+                    End If
+                End Using
+
+                Using cmdEnroll As New MySqlCommand(
+                    "INSERT INTO enrollments (student_id, course_id, semester, academic_year, status, date_enrolled)
+                     VALUES (@sid, @cid, '1st Semester', '2025-2026', 'APPROVED', NOW())", conn)
+                    cmdEnroll.Parameters.AddWithValue("@sid", studentID)
+                    cmdEnroll.Parameters.AddWithValue("@cid", courseId)
+                    cmdEnroll.ExecuteNonQuery()
+                End Using
+
+                ' Get the new enrollment_id
+                Using cmdGetId As New MySqlCommand(
+                    "SELECT enrollment_id FROM enrollments WHERE student_id = @sid LIMIT 1", conn)
+                    cmdGetId.Parameters.AddWithValue("@sid", studentID)
+                    enrollmentId = Convert.ToInt32(cmdGetId.ExecuteScalar())
+                End Using
+            Else
+                ' ── Step 3: Update existing enrollment to APPROVED ──
+                Using cmdUpdate As New MySqlCommand(
+                    "UPDATE enrollments SET status = 'APPROVED' WHERE enrollment_id = @eid", conn)
+                    cmdUpdate.Parameters.AddWithValue("@eid", enrollmentId)
+                    cmdUpdate.ExecuteNonQuery()
+                End Using
+            End If
+
+            ' ── Step 4: Create enrollment_details for each schedule in student's section ──
+            Using cmdDetails As New MySqlCommand(
+                "INSERT IGNORE INTO enrollment_details (enrollment_id, schedule_id)
+                 SELECT @eid, ss.schedule_id
+                 FROM section_schedules ss
+                 INNER JOIN students s ON ss.section_id = s.section_id
+                 WHERE s.student_id = @sid", conn)
+                cmdDetails.Parameters.AddWithValue("@eid", enrollmentId)
+                cmdDetails.Parameters.AddWithValue("@sid", studentID)
+                cmdDetails.ExecuteNonQuery()
             End Using
+
         Catch ex As Exception
             MsgBox("Enrollment Sync Error: " & ex.Message)
         End Try

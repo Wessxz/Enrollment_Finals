@@ -39,7 +39,7 @@ Public Class MySchedulesForm
                  ORDER BY sc.day_of_week, sc.start_time"
 
             Using cmd As New MySqlCommand(query, conn)
-                cmd.Parameters.AddWithValue("@fid", Login.LoggedInUserId)
+                cmd.Parameters.AddWithValue("@fid", UserSession.CurrentCashierID)
 
                 Dim dt As New DataTable
                 Dim da As New MySqlDataAdapter(cmd)

@@ -14,7 +14,6 @@ Public Class Login
             closeCon()
             openCon()
 
-            ' Updated query to use 'id' instead of 'user_id'
             Dim query As String =
                 "SELECT id, username, role FROM users 
                  WHERE username = @username 
@@ -31,6 +30,7 @@ Public Class Login
                         ' Save to Session Module
                         UserSession.CurrentUsername = dr("username").ToString()
                         UserSession.CurrentCashierID = Convert.ToInt32(dr("id"))
+                        UserSession.CurrentRole = dr("role").ToString()
 
                         Dim role As String = dr("role").ToString()
 
@@ -66,9 +66,10 @@ Public Class Login
         Finally
             closeCon()
         End Try
+
     End Sub
 
-    ' Keep your empty Click events here so the designer doesn't break
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     End Sub
+
 End Class
