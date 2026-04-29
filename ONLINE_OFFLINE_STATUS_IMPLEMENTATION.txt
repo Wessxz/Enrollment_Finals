@@ -1,0 +1,234 @@
+================================================================================
+                ONLINE/OFFLINE STATUS IMPLEMENTATION GUIDE
+================================================================================
+
+OVERVIEW:
+This system prevents multiple simultaneous logins for the same user account.
+When a user logs in, they are marked as "online" and cannot login again until
+they logout or are manually set to offline by an admin.
+
+================================================================================
+STEP 1: DATABASE CHANGES
+================================================================================
+
+Run these SQL commands in your database:
+
+-- Add is_online column (0 = offline, 1 = online)
+ALTER TABLE users 
+ADD COLUMN is_online TINYINT(1) DEFAULT 0 AFTER role;
+
+-- Add last_login tracking
+ALTER TABLE users 
+ADD COLUMN last_login DATETIME NULL AFTER is_online;
+
+-- Set all existing users to offline
+UPDATE users SET is_online = 0;
+
+-- Optional: Drop old status column if not needed for staff
+-- (Keep it if you still need it, or drop it after testing)
+ALTER TABLE users DROP COLUMN status;
+
+
+================================================================================
+STEP 2: HOW IT WORKS
+================================================================================
+
+LOGIN FLOW:
+-----------
+1. User enters username and password
+2. System checks if credentials are correct
+3. System checks if user is already online (is_online = 1)
+   - If YES: Show error "Already logged in on another device"
+   - If NO: Continue to step 4
+4. For students: Check if verified in students table
+5. Set user to online (is_online = 1)
+6. Record login time (last_login = NOW())
+7. Open appropriate dashboard
+
+LOGOUT FLOW:
+------------
+1. User clicks Logout button
+2. System sets user to offline (is_online = 0)
+3. Return to login screen
+
+CLOSE APP WITHOUT LOGOUT:
+--------------------------
+If user closes the app without clicking logout, they will remain "online"
+in the database. To handle this:
+- Admin can manually force logout
+- Or implement auto-logout after timeout (future enhancement)
+
+
+================================================================================
+STEP 3: CODE CHANGES MADE
+================================================================================
+
+FILES UPDATED:
+--------------
+1. EnrollmentSystem/Login.vb
+   - Added is_online checking
+   - Added student verification checking
+   - Sets user to online after successful login
+
+2. EnrollmentSystem/AdminDashboard.vb
+   - Updated logout to set is_online = 0
+
+3. EnrollmentSystem/RegistrarDashboard.vb
+   - Updated logout to set is_online = 0
+
+4. EnrollmentSystem/CashierDashboard.vb
+   - Updated logout to set is_online = 0
+
+5. EnrollmentSystem/FacultyDashboard.vb
+   - Updated logout to set is_online = 0
+
+
+================================================================================
+STEP 4: TESTING
+================================================================================
+
+TEST SCENARIO 1: Normal Login/Logout
+-------------------------------------
+1. Login as cashier (username: cashier, password: cashier123)
+2. Verify dashboard opens
+3. Click Logout
+4. Verify you can login again
+
+TEST SCENARIO 2: Multiple Login Prevention
+-------------------------------------------
+1. Login as cashier on one computer/session
+2. Try to login as cashier on another computer/session
+3. Should show error: "This account is currently logged in on another device"
+4. Logout from first session
+5. Now second session should be able to login
+
+TEST SCENARIO 3: Student Verification
+--------------------------------------
+1. Create a student account with status = 'pending' in students table
+2. Try to login as that student
+3. Should show error: "Your account is pending verification by admin"
+4. Admin verifies student (status = 'verified')
+5. Student should now be able to login
+
+TEST SCENARIO 4: Staff Login (No Verification Needed)
+------------------------------------------------------
+1. Admin creates a new staff account (registrar/cashier/faculty)
+2. Staff should be able to login immediately without verification
+3. Only students need verification
+
+
+================================================================================
+STEP 5: USER TABLE STRUCTURE
+================================================================================
+
+FINAL users TABLE STRUCTURE:
+----------------------------
+- id (INT, PRIMARY KEY)
+- username (VARCHAR)
+- password_hash (VARCHAR)
+- role (ENUM: admin, registrar, cashier, faculty, student)
+- is_online (TINYINT: 0 or 1) ← NEW
+- last_login (DATETIME) ← NEW
+- created_at (DATETIME)
+
+FINAL students TABLE STRUCTURE:
+-------------------------------
+- id (INT, PRIMARY KEY)
+- student_id (VARCHAR, e.g., 2026-0001)
+- first_name (VARCHAR)
+- last_name (VARCHAR)
+- course (VARCHAR)
+- year_level (VARCHAR)
+- student_type (ENUM: REGULAR, IRREGULAR)
+- section_id (INT, nullable)
+- status (ENUM: pending, verified, rejected) ← For verification
+- user_id (INT, FOREIGN KEY to users.id)
+
+
+================================================================================
+STEP 6: VERIFICATION LOGIC
+================================================================================
+
+STAFF ACCOUNTS (admin, registrar, cashier, faculty):
+----------------------------------------------------
+- Created by admin through desktop app
+- No verification needed
+- Can login immediately
+- Only checked: username, password, is_online
+
+STUDENT ACCOUNTS:
+-----------------
+- Created via web portal registration
+- Needs admin verification
+- Cannot login until verified
+- Checked: username, password, students.status='verified', is_online
+
+
+================================================================================
+STEP 7: FUTURE ENHANCEMENTS (Optional)
+================================================================================
+
+1. AUTO-LOGOUT AFTER TIMEOUT
+   - If user inactive for 30 minutes, auto set to offline
+   - Prevents "stuck" online status
+
+2. ADMIN FORCE LOGOUT
+   - Add button in Admin Dashboard
+   - Admin can manually set any user to offline
+   - Useful if someone forgot to logout
+
+3. LOGIN HISTORY
+   - Create login_logs table
+   - Track all login attempts (success/failed)
+   - Track login time, logout time, IP address
+
+4. SESSION TIMEOUT
+   - Auto-logout after X minutes of inactivity
+   - Show warning before auto-logout
+
+
+================================================================================
+STEP 8: TROUBLESHOOTING
+================================================================================
+
+PROBLEM: User can't login, says "already logged in"
+SOLUTION: Admin manually sets is_online = 0 for that user
+
+PROBLEM: All users stuck as online
+SOLUTION: Run this SQL command:
+UPDATE users SET is_online = 0;
+
+PROBLEM: Student can't login after verification
+SOLUTION: Check students.status = 'verified' and users.is_online = 0
+
+PROBLEM: Staff can't login
+SOLUTION: Check users.is_online = 0 (staff don't need verification)
+
+
+================================================================================
+STEP 9: SQL QUERIES FOR ADMIN
+================================================================================
+
+-- View all online users
+SELECT id, username, role, last_login 
+FROM users 
+WHERE is_online = 1;
+
+-- Force logout a specific user
+UPDATE users SET is_online = 0 WHERE username = 'cashier';
+
+-- Force logout all users
+UPDATE users SET is_online = 0;
+
+-- View students pending verification
+SELECT s.student_id, s.first_name, s.last_name, s.status
+FROM students s
+WHERE s.status = 'pending';
+
+-- Verify a student
+UPDATE students SET status = 'verified' WHERE student_id = '2026-0001';
+
+
+================================================================================
+END OF IMPLEMENTATION GUIDE
+================================================================================

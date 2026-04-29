@@ -1,0 +1,620 @@
+================================================================================
+                    ENROLLMENT SYSTEM FLOWCHART
+================================================================================
+
+================================================================================
+PHASE 1: STUDENT REGISTRATION (WEB PORTAL)
+================================================================================
+
+START
+  |
+  v
+[Student accesses Web Portal]
+  |
+  v
+[Student fills registration form]
+  - Student ID
+  - First Name, Last Name
+  - Course, Year Level
+  - Student Type (REGULAR/IRREGULAR)
+  - Contact Info
+  |
+  v
+[Submit Registration]
+  |
+  v
+[System saves to database]
+  - Table: students
+  - status = 'PENDING'
+  - student_type = 'REGULAR' or 'IRREGULAR'
+  |
+  v
+[Display: "Registration submitted. Wait for admin verification."]
+  |
+  v
+END (Student waits)
+
+
+================================================================================
+PHASE 2: ADMIN VERIFICATION (DESKTOP APP)
+================================================================================
+
+START
+  |
+  v
+[Admin logs into Desktop App]
+  - Username & Password
+  - Role: ADMIN
+  |
+  v
+[Admin Dashboard loads]
+  - Shows stats: Students, Users, Enrolled, Revenue
+  |
+  v
+[Admin clicks "Manage Users" or "View Students"]
+  |
+  v
+[System displays list of students]
+  - Filter: status = 'PENDING'
+  |
+  v
+[Admin reviews student information]
+  |
+  v
+<Decision: Approve or Reject?>
+  |
+  +--- [APPROVE] ---> [Update status = 'VERIFIED']
+  |                        |
+  |                        v
+  |                   [Student notified]
+  |                        |
+  |                        v
+  |                   [Student can now enroll]
+  |
+  +--- [REJECT] ----> [Update status = 'REJECTED' or DELETE]
+                           |
+                           v
+                      [Student notified]
+                           |
+                           v
+                      END
+
+
+================================================================================
+PHASE 3A: REGULAR STUDENT ENROLLMENT (DESKTOP APP - REGISTRAR)
+================================================================================
+
+START
+  |
+  v
+[Registrar logs into Desktop App]
+  - Username & Password
+  - Role: REGISTRAR
+  |
+  v
+[Registrar Dashboard loads]
+  - Shows stats: Students, Enrolled, Courses, Subjects
+  |
+  v
+[Registrar clicks "Students"]
+  |
+  v
+[Opens Student Form]
+  |
+  v
+[Registrar selects VERIFIED student]
+  - student_type = 'REGULAR'
+  |
+  v
+[Registrar assigns Section]
+  - Selects from cmbSection dropdown
+  |
+  v
+<Check: Is section full?>
+  |
+  +--- [YES] ---> [Display error: "Section is FULL!"]
+  |                    |
+  |                    v
+  |               [Select different section]
+  |
+  +--- [NO] ----> [Save section assignment]
+                       |
+                       v
+                  [System auto-enrolls student]
+                       |
+                       v
+                  [Query: Get all schedules for this section]
+                  - FROM: section_schedules
+                  - WHERE: section_id = selected section
+                       |
+                       v
+                  [Create enrollment record]
+                  - Table: enrollments
+                  - student_id, enrollment_date, semester, academic_year
+                       |
+                       v
+                  [For each schedule in section:]
+                       |
+                       v
+                  [Create enrollment_details record]
+                  - enrollment_id, schedule_id
+                       |
+                       v
+                  [Display: "Student enrolled successfully!"]
+                       |
+                       v
+                  END
+
+
+================================================================================
+PHASE 3B: IRREGULAR STUDENT ENROLLMENT (DESKTOP APP - REGISTRAR)
+================================================================================
+
+START
+  |
+  v
+[Registrar logs into Desktop App]
+  |
+  v
+[Registrar Dashboard loads]
+  |
+  v
+[Registrar clicks "Irregular Enrollment"]
+  |
+  v
+[Opens Irregular Enrollment Form]
+  |
+  v
+[Registrar enters Student ID and clicks Search]
+  |
+  v
+<Check: Is student_type = 'IRREGULAR'?>
+  |
+  +--- [NO] ---> [Display error: "Student is not IRREGULAR type"]
+  |                   |
+  |                   v
+  |              END (Return to search)
+  |
+  +--- [YES] ---> [Display student info]
+                       |
+                       v
+                  [Registrar selects Semester & Academic Year]
+                       |
+                       v
+                  [System loads available schedules]
+                  - Shows: Subject, Day, Time, Room, Faculty
+                       |
+                       v
+                  [Registrar selects schedule from grid]
+                       |
+                       v
+                  [Registrar clicks "Add Subject"]
+                       |
+                       v
+                  <Check: Time conflict with already added subjects?>
+                       |
+                       +--- [YES] ---> [Display error: "Time conflict detected!"]
+                       |                    |
+                       |                    v
+                       |               [Select different schedule]
+                       |
+                       +--- [NO] ----> [Add to selected subjects list]
+                                            |
+                                            v
+                                       [Repeat for more subjects]
+                                            |
+                                            v
+                                       [Registrar clicks "Enroll"]
+                                            |
+                                            v
+                                       [Create enrollment record]
+                                       - Table: enrollments
+                                            |
+                                            v
+                                       [For each selected schedule:]
+                                            |
+                                            v
+                                       [Create enrollment_details record]
+                                       - enrollment_id, schedule_id
+                                            |
+                                            v
+                                       [Display: "Irregular student enrolled!"]
+                                            |
+                                            v
+                                       END
+
+
+================================================================================
+PHASE 4: BILLING CREATION (DESKTOP APP - CASHIER)
+================================================================================
+
+START
+  |
+  v
+[Cashier logs into Desktop App]
+  - Username & Password
+  - Role: CASHIER
+  |
+  v
+[Cashier Dashboard loads]
+  - Shows stats: Total Collected, Pending, Today's Collection
+  |
+  v
+[Cashier clicks "Billing"]
+  |
+  v
+[Opens Billing Form]
+  |
+  v
+[Cashier selects Student from dropdown]
+  |
+  v
+[System retrieves student enrollment data]
+  |
+  v
+[System counts enrolled subjects]
+  - Query: COUNT enrollment_details for this student
+  |
+  v
+[System calculates tuition]
+  - Formula: subject_count × ₱1,800
+  - Display in txtTuition
+  |
+  v
+[Cashier enters additional fees]
+  - Misc Fee
+  - Lab Fee
+  - Other Fees
+  |
+  v
+[Cashier clicks "Compute"]
+  |
+  v
+[System calculates total]
+  - Total = Tuition + Misc + Lab + Other
+  |
+  v
+[Cashier selects Payment Mode]
+  |
+  v
+<Payment Mode?>
+  |
+  +--- [FULL PAYMENT] ---> [Display: Total Due = Total Amount]
+  |
+  +--- [PARTIAL PAYMENT] --> [Calculate breakdown]
+                                  |
+                                  v
+                             [Downpayment = ₱2,500]
+                                  |
+                                  v
+                             [Remaining = Total - 2500]
+                                  |
+                                  v
+                             [Per Installment = Remaining ÷ 4]
+                                  |
+                                  v
+                             [Display breakdown]
+  |
+  v
+[Cashier clicks "Save"]
+  |
+  v
+[System saves to billing table]
+  - student_id
+  - tuition_fee
+  - misc_fee
+  - total_amount
+  - balance = total_amount
+  - payment_mode (FULL/PARTIAL)
+  - status = 'UNPAID'
+  |
+  v
+[Display: "Billing created successfully!"]
+  |
+  v
+END
+
+
+================================================================================
+PHASE 5: PAYMENT PROCESSING (DESKTOP APP - CASHIER)
+================================================================================
+
+START
+  |
+  v
+[Cashier clicks "Payment"]
+  |
+  v
+[Opens Cashier Form]
+  |
+  v
+[System loads students with outstanding balance]
+  - Query: billing WHERE status != 'PAID' AND balance > 0
+  - Display in dropdown
+  |
+  v
+[Cashier selects Student]
+  |
+  v
+[System displays current balance]
+  - Shows: "Balance: ₱X,XXX.XX"
+  |
+  v
+[Cashier enters payment amount]
+  |
+  v
+<Validate: Amount > 0?>
+  |
+  +--- [NO] ---> [Display error: "Enter valid amount"]
+  |                   |
+  |                   v
+  |              [Return to input]
+  |
+  +--- [YES] ---> [Cashier clicks "Pay"]
+                       |
+                       v
+                  [System generates OR Number]
+                  - Format: OR-YYYYMMDDHHmmss
+                       |
+                       v
+                  [System saves to payments table]
+                  - billing_id
+                  - or_number
+                  - amount_paid
+                  - payment_date = NOW()
+                  - cashier_id = logged-in cashier
+                       |
+                       v
+                  [System updates billing table]
+                  - balance = balance - amount_paid
+                       |
+                       v
+                  <Check: balance = 0?>
+                       |
+                       +--- [YES] ---> [status = 'PAID']
+                       |
+                       +--- [NO] ----> [status = 'PARTIAL']
+                       |
+                       v
+                  [Display: "Payment successful! OR: OR-XXXXX"]
+                       |
+                       v
+                  [Print OR receipt (optional)]
+                       |
+                       v
+                  END
+
+
+================================================================================
+PHASE 6: GRADE ENCODING (DESKTOP APP - FACULTY)
+================================================================================
+
+START
+  |
+  v
+[Faculty logs into Desktop App]
+  - Username & Password
+  - Role: FACULTY
+  |
+  v
+[Faculty Dashboard loads]
+  - Shows stats: Active Classes, Total Students, Pending Grades
+  - Shows schedule table
+  |
+  v
+[Faculty clicks "Encode Grades"]
+  |
+  v
+[Opens Encode Grades Form]
+  |
+  v
+[System loads faculty's subjects into dropdown]
+  - Query: schedules WHERE faculty_id = logged-in faculty
+  |
+  v
+[Faculty selects Subject]
+  |
+  v
+[System loads all enrolled students for this subject]
+  - Display in DataGridView
+  - Shows: Student ID, Name, Prelim, Midterm, Final, Status
+  |
+  v
+[Faculty selects Term]
+  - Dropdown: Prelim / Midterm / Final
+  |
+  v
+[Faculty enters Student ID and clicks Search]
+  |
+  v
+<Check: Student enrolled in this subject?>
+  |
+  +--- [NO] ---> [Display error: "Student not found in this subject"]
+  |                   |
+  |                   v
+  |              [Return to search]
+  |
+  +--- [YES] ---> [Display student info]
+                  - Student Name
+                  - Course
+                       |
+                       v
+                  [System loads existing grade for selected term]
+                  - If Prelim selected → show prelim_grade
+                  - If Midterm selected → show midterm_grade
+                  - If Final selected → show final_grade
+                       |
+                       v
+                  [Faculty enters/edits grade in txtGrade]
+                       |
+                       v
+                  <Validate grade?>
+                       |
+                       +--- [Invalid] ---> [Display error: "Grade must be 65-100, INC, or DRP"]
+                       |                        |
+                       |                        v
+                       |                   [Return to input]
+                       |
+                       +--- [Valid] ----> [Faculty clicks "Save Grade"]
+                                               |
+                                               v
+                                          <Check: Grade record exists?>
+                                               |
+                                               +--- [YES] ---> [UPDATE grades table]
+                                               |                    |
+                                               |                    v
+                                               |               [Set column based on term]
+                                               |               - prelim_grade / midterm_grade / final_grade
+                                               |                    |
+                                               |                    v
+                                               |               [encoded_by = faculty_id]
+                                               |               [encoded_date = NOW()]
+                                               |
+                                               +--- [NO] ----> [INSERT into grades table]
+                                                                    |
+                                                                    v
+                                                               [Set column based on term]
+                                                                    |
+                                                                    v
+                                                               [encoded_by = faculty_id]
+                                                               [encoded_date = NOW()]
+                                               |
+                                               v
+                                          [Display: "Grade saved successfully!"]
+                                               |
+                                               v
+                                          [Refresh DataGridView]
+                                          - Shows updated grades for all students
+                                               |
+                                               v
+                                          [Clear form for next student]
+                                               |
+                                               v
+                                          <Encode more grades?>
+                                               |
+                                               +--- [YES] ---> [Return to search]
+                                               |
+                                               +--- [NO] ----> END
+
+
+================================================================================
+PHASE 7: VIEW STUDENT MASTERLIST (DESKTOP APP - FACULTY)
+================================================================================
+
+START
+  |
+  v
+[Faculty clicks "Student Masterlist"]
+  |
+  v
+[Opens Student Masterlist Form]
+  |
+  v
+[System loads all grades for faculty's subjects]
+  - Query: grades + enrollment_details + enrollments + students
+  - WHERE: schedule_id IN (faculty's schedules)
+  |
+  v
+[Display in DataGridView]
+  - Columns: Student ID, Name, Course, Year, Subject Code, 
+             Subject Name, Prelim, Midterm, Final, Status
+  |
+  v
+[Faculty can filter/search]
+  - By Student ID
+  - By Student Name
+  - By Subject Code
+  |
+  v
+[Faculty can select Subject filter]
+  - Dropdown shows faculty's subjects
+  |
+  v
+[Faculty clicks "Export to CSV"]
+  |
+  v
+[System generates CSV file]
+  - Saves to selected location
+  |
+  v
+[Display: "Export successful!"]
+  |
+  v
+END
+
+
+================================================================================
+SUMMARY OF USER ROLES
+================================================================================
+
+1. STUDENT (Web Portal)
+   - Register account
+   - Wait for verification
+
+2. ADMIN (Desktop App)
+   - Verify student registrations
+   - Manage users
+   - View system statistics
+
+3. REGISTRAR (Desktop App)
+   - Manage students
+   - Assign sections (REGULAR)
+   - Manual enrollment (IRREGULAR)
+   - Manage courses, subjects, schedules, sections
+
+4. CASHIER (Desktop App)
+   - Create billing
+   - Process payments
+   - Generate OR receipts
+   - View payment reports
+
+5. FACULTY (Desktop App)
+   - View schedules
+   - View class lists
+   - Encode grades (Prelim/Midterm/Final)
+   - View student masterlist
+   - Export grade reports
+
+
+================================================================================
+DATABASE FLOW
+================================================================================
+
+students (Web Portal creates, Admin verifies)
+    |
+    v
+enrollments (Registrar creates)
+    |
+    v
+enrollment_details (Links students to schedules)
+    |
+    +---> billing (Cashier creates)
+    |        |
+    |        v
+    |     payments (Cashier processes)
+    |
+    +---> grades (Faculty encodes)
+
+
+================================================================================
+KEY STATUS VALUES
+================================================================================
+
+students.status:
+  - PENDING (after web registration)
+  - VERIFIED (after admin approval)
+  - REJECTED (if admin rejects)
+
+billing.status:
+  - UNPAID (initial)
+  - PARTIAL (some payment made)
+  - PAID (fully paid)
+
+student_type:
+  - REGULAR (auto-enroll all section subjects)
+  - IRREGULAR (manual subject selection)
+
+
+================================================================================
+END OF FLOWCHART
+================================================================================

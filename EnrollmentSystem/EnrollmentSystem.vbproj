@@ -264,6 +264,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Connection.vb" />
+    <Compile Include="CourseForm.Designer.vb">
+      <DependentUpon>CourseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CourseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CourseSubjectForm.Designer.vb">
       <DependentUpon>CourseSubjectForm.vb</DependentUpon>
     </Compile>
@@ -375,6 +381,12 @@
       <DependentUpon>StudentForm.vb</DependentUpon>
     </Compile>
     <Compile Include="StudentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectForm.Designer.vb">
+      <DependentUpon>SubjectForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserCreationForm.Designer.vb">

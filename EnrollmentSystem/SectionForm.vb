@@ -5,7 +5,32 @@ Public Class SectionForm
     Private selectedSectionId As Integer = 0
 
     Private Sub SectionForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadCourseDropdown()
         LoadSections()
+    End Sub
+
+    ' =========================================================
+    ' LOAD COURSES FROM DATABASE INTO DROPDOWN
+    ' =========================================================
+    Private Sub LoadCourseDropdown()
+        Try
+            openCon()
+            Using cmd As New MySqlCommand(
+                "SELECT course_code, course_name FROM courses ORDER BY course_name", conn)
+                Dim dt As New DataTable
+                Dim da As New MySqlDataAdapter(cmd)
+                da.Fill(dt)
+
+                cmbCourse.DataSource = dt
+                cmbCourse.DisplayMember = "course_name"  ' Shows: Bachelor of Science in Information Technology
+                cmbCourse.ValueMember = "course_code"    ' Saves: BSIT
+                cmbCourse.SelectedIndex = -1
+            End Using
+        Catch ex As Exception
+            MsgBox("Error loading courses: " & ex.Message)
+        Finally
+            closeCon()
+        End Try
     End Sub
 
     ' =========================================================
@@ -83,7 +108,8 @@ Public Class SectionForm
         selectedSectionId = Convert.ToInt32(row.Cells("section_id").Value)
 
         txtSectionName.Text = row.Cells("section_name").Value.ToString()
-        txtCourse.Text = row.Cells("course").Value.ToString()
+        ' Match the course_code to select the correct item in dropdown
+        cmbCourse.SelectedValue = row.Cells("course").Value.ToString()
         cmbYearLevel.Text = row.Cells("year_level").Value.ToString()
         cmbSemester.Text = row.Cells("semester").Value.ToString()
         txtAcadYear.Text = row.Cells("academic_year").Value.ToString()
@@ -94,7 +120,7 @@ Public Class SectionForm
     ' =========================================================
     Private Function ValidateInputs() As Boolean
         If txtSectionName.Text = "" Then Return False
-        If txtCourse.Text = "" Then Return False
+        If cmbCourse.SelectedValue Is Nothing Then Return False
         If cmbYearLevel.Text = "" Then Return False
         If cmbSemester.Text = "" Then Return False
         If txtAcadYear.Text = "" Then Return False
@@ -118,7 +144,7 @@ Public Class SectionForm
                 VALUES (@name,@course,@yr,@sem,@ay)", conn)
 
                 cmd.Parameters.AddWithValue("@name", txtSectionName.Text.Trim())
-                cmd.Parameters.AddWithValue("@course", txtCourse.Text.Trim())
+                cmd.Parameters.AddWithValue("@course", cmbCourse.SelectedValue.ToString())
                 cmd.Parameters.AddWithValue("@yr", cmbYearLevel.Text)
                 cmd.Parameters.AddWithValue("@sem", cmbSemester.Text)
                 cmd.Parameters.AddWithValue("@ay", txtAcadYear.Text)
@@ -156,7 +182,7 @@ Public Class SectionForm
                  WHERE section_id=@id", conn)
 
                 cmd.Parameters.AddWithValue("@name", txtSectionName.Text)
-                cmd.Parameters.AddWithValue("@course", txtCourse.Text)
+                cmd.Parameters.AddWithValue("@course", cmbCourse.SelectedValue.ToString())
                 cmd.Parameters.AddWithValue("@yr", cmbYearLevel.Text)
                 cmd.Parameters.AddWithValue("@sem", cmbSemester.Text)
                 cmd.Parameters.AddWithValue("@ay", txtAcadYear.Text)
@@ -208,7 +234,7 @@ Public Class SectionForm
     Private Sub ClearFields()
         selectedSectionId = 0
         txtSectionName.Clear()
-        txtCourse.Clear()
+        cmbCourse.SelectedIndex = -1
         cmbYearLevel.SelectedIndex = -1
         cmbSemester.SelectedIndex = -1
         txtAcadYear.Text = ""

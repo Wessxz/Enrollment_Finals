@@ -22,7 +22,7 @@ Partial Class SectionForm
         Me.lblSectionName = New System.Windows.Forms.Label()
         Me.txtSectionName = New System.Windows.Forms.TextBox()
         Me.lblCourse = New System.Windows.Forms.Label()
-        Me.txtCourse = New System.Windows.Forms.TextBox()
+        Me.cmbCourse = New System.Windows.Forms.ComboBox()
         Me.lblYearLevel = New System.Windows.Forms.Label()
         Me.cmbYearLevel = New System.Windows.Forms.ComboBox()
         Me.lblSemester = New System.Windows.Forms.Label()
@@ -79,7 +79,7 @@ Partial Class SectionForm
         Me.pnlLeft.Controls.Add(Me.lblSectionName)
         Me.pnlLeft.Controls.Add(Me.txtSectionName)
         Me.pnlLeft.Controls.Add(Me.lblCourse)
-        Me.pnlLeft.Controls.Add(Me.txtCourse)
+        Me.pnlLeft.Controls.Add(Me.cmbCourse)
         Me.pnlLeft.Controls.Add(Me.lblYearLevel)
         Me.pnlLeft.Controls.Add(Me.cmbYearLevel)
         Me.pnlLeft.Controls.Add(Me.lblSemester)
@@ -121,12 +121,13 @@ Partial Class SectionForm
         Me.lblCourse.TabIndex = 2
         Me.lblCourse.Text = "Course *"
         '
-        'txtCourse
+        'cmbCourse
         '
-        Me.txtCourse.Location = New System.Drawing.Point(15, 95)
-        Me.txtCourse.Name = "txtCourse"
-        Me.txtCourse.Size = New System.Drawing.Size(260, 27)
-        Me.txtCourse.TabIndex = 3
+        Me.cmbCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbCourse.Location = New System.Drawing.Point(15, 95)
+        Me.cmbCourse.Name = "cmbCourse"
+        Me.cmbCourse.Size = New System.Drawing.Size(260, 28)
+        Me.cmbCourse.TabIndex = 3
         '
         'lblYearLevel
         '
@@ -295,7 +296,7 @@ Partial Class SectionForm
     Friend WithEvents lblSectionName As System.Windows.Forms.Label
     Friend WithEvents txtSectionName As System.Windows.Forms.TextBox
     Friend WithEvents lblCourse    As System.Windows.Forms.Label
-    Friend WithEvents txtCourse    As System.Windows.Forms.TextBox
+    Friend WithEvents cmbCourse    As System.Windows.Forms.ComboBox
     Friend WithEvents lblYearLevel As System.Windows.Forms.Label
     Friend WithEvents cmbYearLevel As System.Windows.Forms.ComboBox
     Friend WithEvents lblSemester  As System.Windows.Forms.Label

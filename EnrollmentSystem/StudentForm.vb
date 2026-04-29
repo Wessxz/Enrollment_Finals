@@ -8,8 +8,32 @@ Public Class StudentForm
     ' FORM LOAD
     ' =========================================================
     Private Sub StudentForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadCourseDropdown()
         LoadSectionCombo()
         LoadStudents()
+    End Sub
+
+    ' =========================================================
+    ' LOAD COURSES FROM DATABASE
+    ' =========================================================
+    Private Sub LoadCourseDropdown()
+        Try
+            openCon()
+            Using cmd As New MySqlCommand(
+                "SELECT course_code, course_name FROM courses ORDER BY course_name", conn)
+                Dim dt As New DataTable
+                Dim da As New MySqlDataAdapter(cmd)
+                da.Fill(dt)
+                cmbCourse.DataSource = dt
+                cmbCourse.DisplayMember = "course_name"
+                cmbCourse.ValueMember = "course_code"
+                cmbCourse.SelectedIndex = -1
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error loading courses: " & ex.Message)
+        Finally
+            closeCon()
+        End Try
     End Sub
 
     ' =========================================================
@@ -69,6 +93,7 @@ Public Class StudentForm
         txtFirstName.Clear()
         txtLastName.Clear()
         txtCourse.Clear()
+        cmbCourse.SelectedIndex = -1
 
         cmbYearLevel.SelectedIndex = -1
         cmbStudentStatus.SelectedIndex = -1
@@ -158,6 +183,7 @@ Public Class StudentForm
         txtFirstName.Text = row.Cells("first_name").Value.ToString()
         txtLastName.Text = row.Cells("last_name").Value.ToString()
         txtCourse.Text = row.Cells("course").Value.ToString()
+        cmbCourse.SelectedValue = row.Cells("course").Value.ToString()
         cmbYearLevel.Text = row.Cells("year_level").Value.ToString()
         cmbStudentStatus.Text = row.Cells("student_type").Value.ToString()
 
@@ -209,7 +235,7 @@ Public Class StudentForm
                 cmd.Parameters.AddWithValue("@sid", txtStudentID.Text)
                 cmd.Parameters.AddWithValue("@fn", txtFirstName.Text)
                 cmd.Parameters.AddWithValue("@ln", txtLastName.Text)
-                cmd.Parameters.AddWithValue("@course", txtCourse.Text)
+                cmd.Parameters.AddWithValue("@course", If(cmbCourse.SelectedValue IsNot Nothing, cmbCourse.SelectedValue.ToString(), txtCourse.Text))
                 cmd.Parameters.AddWithValue("@yr", cmbYearLevel.Text)
                 cmd.Parameters.AddWithValue("@type", cmbStudentStatus.Text)
                 cmd.Parameters.AddWithValue("@section", sectionId)

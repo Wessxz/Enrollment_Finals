@@ -26,6 +26,7 @@ Partial Class StudentForm
         Me.txtFirstName = New System.Windows.Forms.TextBox()
         Me.txtLastName = New System.Windows.Forms.TextBox()
         Me.txtCourse = New System.Windows.Forms.TextBox()
+        Me.cmbCourse = New System.Windows.Forms.ComboBox()
         Me.dgvStudents = New System.Windows.Forms.DataGridView()
         Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
@@ -115,6 +116,15 @@ Partial Class StudentForm
         Me.txtCourse.Name = "txtCourse"
         Me.txtCourse.Size = New System.Drawing.Size(150, 22)
         Me.txtCourse.TabIndex = 10
+        Me.txtCourse.Visible = False
+        '
+        'cmbCourse
+        '
+        Me.cmbCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbCourse.Location = New System.Drawing.Point(600, 110)
+        Me.cmbCourse.Name = "cmbCourse"
+        Me.cmbCourse.Size = New System.Drawing.Size(200, 24)
+        Me.cmbCourse.TabIndex = 10
         '
         'dgvStudents
         '
@@ -187,6 +197,7 @@ Partial Class StudentForm
         Me.Controls.Add(Me.txtFirstName)
         Me.Controls.Add(Me.txtLastName)
         Me.Controls.Add(Me.txtCourse)
+        Me.Controls.Add(Me.cmbCourse)
         '
         'lblSection
         '
@@ -232,6 +243,7 @@ Partial Class StudentForm
     Friend WithEvents txtFirstName As TextBox
     Friend WithEvents txtLastName As TextBox
     Friend WithEvents txtCourse As TextBox
+    Friend WithEvents cmbCourse As ComboBox
 
     Friend WithEvents dgvStudents As DataGridView
     Friend WithEvents btnUpdate As Button

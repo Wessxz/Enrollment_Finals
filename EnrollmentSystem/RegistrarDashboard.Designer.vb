@@ -23,9 +23,11 @@ Partial Class RegistrarDashboard
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.pnlSidebar = New System.Windows.Forms.Panel()
+        Me.btnIrregularEnrollment = New System.Windows.Forms.Button()
         Me.btnDashboard = New System.Windows.Forms.Button()
         Me.btnStudents = New System.Windows.Forms.Button()
         Me.btnCourses = New System.Windows.Forms.Button()
+        Me.btnSubjects = New System.Windows.Forms.Button()
         Me.btnSchedule = New System.Windows.Forms.Button()
         Me.btnSections = New System.Windows.Forms.Button()
         Me.btnSectionSchedule = New System.Windows.Forms.Button()
@@ -41,7 +43,7 @@ Partial Class RegistrarDashboard
         Me.lblCourses = New System.Windows.Forms.Label()
         Me.cardSubjects = New System.Windows.Forms.Panel()
         Me.lblSubjects = New System.Windows.Forms.Label()
-        Me.btnIrregularEnrollment = New System.Windows.Forms.Button()
+        Me.btnAssignschedule = New System.Windows.Forms.Button()
         Me.pnlSidebar.SuspendLayout()
         Me.pnlTop.SuspendLayout()
         Me.pnlMain.SuspendLayout()
@@ -54,10 +56,12 @@ Partial Class RegistrarDashboard
         'pnlSidebar
         '
         Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.pnlSidebar.Controls.Add(Me.btnAssignschedule)
         Me.pnlSidebar.Controls.Add(Me.btnIrregularEnrollment)
         Me.pnlSidebar.Controls.Add(Me.btnDashboard)
         Me.pnlSidebar.Controls.Add(Me.btnStudents)
         Me.pnlSidebar.Controls.Add(Me.btnCourses)
+        Me.pnlSidebar.Controls.Add(Me.btnSubjects)
         Me.pnlSidebar.Controls.Add(Me.btnSchedule)
         Me.pnlSidebar.Controls.Add(Me.btnSections)
         Me.pnlSidebar.Controls.Add(Me.btnSectionSchedule)
@@ -67,6 +71,15 @@ Partial Class RegistrarDashboard
         Me.pnlSidebar.Name = "pnlSidebar"
         Me.pnlSidebar.Size = New System.Drawing.Size(220, 700)
         Me.pnlSidebar.TabIndex = 2
+        '
+        'btnIrregularEnrollment
+        '
+        Me.btnIrregularEnrollment.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnIrregularEnrollment.Location = New System.Drawing.Point(12, 381)
+        Me.btnIrregularEnrollment.Name = "btnIrregularEnrollment"
+        Me.btnIrregularEnrollment.Size = New System.Drawing.Size(200, 45)
+        Me.btnIrregularEnrollment.TabIndex = 6
+        Me.btnIrregularEnrollment.Text = "Irregular Enrollment"
         '
         'btnDashboard
         '
@@ -95,10 +108,19 @@ Partial Class RegistrarDashboard
         Me.btnCourses.TabIndex = 2
         Me.btnCourses.Text = "Courses"
         '
+        'btnSubjects
+        '
+        Me.btnSubjects.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnSubjects.Location = New System.Drawing.Point(10, 215)
+        Me.btnSubjects.Name = "btnSubjects"
+        Me.btnSubjects.Size = New System.Drawing.Size(200, 45)
+        Me.btnSubjects.TabIndex = 9
+        Me.btnSubjects.Text = "Subjects"
+        '
         'btnSchedule
         '
         Me.btnSchedule.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnSchedule.Location = New System.Drawing.Point(10, 220)
+        Me.btnSchedule.Location = New System.Drawing.Point(10, 270)
         Me.btnSchedule.Name = "btnSchedule"
         Me.btnSchedule.Size = New System.Drawing.Size(200, 45)
         Me.btnSchedule.TabIndex = 3
@@ -107,7 +129,7 @@ Partial Class RegistrarDashboard
         'btnSections
         '
         Me.btnSections.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnSections.Location = New System.Drawing.Point(10, 275)
+        Me.btnSections.Location = New System.Drawing.Point(10, 325)
         Me.btnSections.Name = "btnSections"
         Me.btnSections.Size = New System.Drawing.Size(200, 45)
         Me.btnSections.TabIndex = 4
@@ -116,7 +138,7 @@ Partial Class RegistrarDashboard
         'btnSectionSchedule
         '
         Me.btnSectionSchedule.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnSectionSchedule.Location = New System.Drawing.Point(10, 330)
+        Me.btnSectionSchedule.Location = New System.Drawing.Point(10, 380)
         Me.btnSectionSchedule.Name = "btnSectionSchedule"
         Me.btnSectionSchedule.Size = New System.Drawing.Size(200, 45)
         Me.btnSectionSchedule.TabIndex = 5
@@ -242,14 +264,14 @@ Partial Class RegistrarDashboard
         Me.lblSubjects.TabIndex = 0
         Me.lblSubjects.Text = "Subjects: 0"
         '
-        'btnIrregularEnrollment
+        'btnAssignschedule
         '
-        Me.btnIrregularEnrollment.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnIrregularEnrollment.Location = New System.Drawing.Point(12, 381)
-        Me.btnIrregularEnrollment.Name = "btnIrregularEnrollment"
-        Me.btnIrregularEnrollment.Size = New System.Drawing.Size(200, 45)
-        Me.btnIrregularEnrollment.TabIndex = 6
-        Me.btnIrregularEnrollment.Text = "Irregular Enrollment"
+        Me.btnAssignschedule.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnAssignschedule.Location = New System.Drawing.Point(10, 432)
+        Me.btnAssignschedule.Name = "btnAssignschedule"
+        Me.btnAssignschedule.Size = New System.Drawing.Size(200, 45)
+        Me.btnAssignschedule.TabIndex = 10
+        Me.btnAssignschedule.Text = "Assign Schedule"
         '
         'RegistrarDashboard
         '
@@ -282,6 +304,7 @@ Partial Class RegistrarDashboard
     Friend WithEvents btnDashboard As System.Windows.Forms.Button
     Friend WithEvents btnStudents As System.Windows.Forms.Button
     Friend WithEvents btnCourses As System.Windows.Forms.Button
+    Friend WithEvents btnSubjects As System.Windows.Forms.Button
     Friend WithEvents btnSchedule As System.Windows.Forms.Button
     Friend WithEvents btnSections As System.Windows.Forms.Button
     Friend WithEvents btnSectionSchedule As System.Windows.Forms.Button
@@ -299,4 +322,5 @@ Partial Class RegistrarDashboard
     Friend WithEvents lblCourses As System.Windows.Forms.Label
     Friend WithEvents lblSubjects As System.Windows.Forms.Label
     Friend WithEvents btnIrregularEnrollment As Button
+    Friend WithEvents btnAssignschedule As Button
 End Class

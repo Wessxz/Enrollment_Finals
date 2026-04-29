@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36310.24 d17.14
+VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EnrollmentSystem", "EnrollmentSystem\EnrollmentSystem.vbproj", "{0E1D789E-9B72-4EE3-B9BE-7FAFC599E916}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		EnrollmentSystem\CourseForm.Designer.vb = EnrollmentSystem\CourseForm.Designer.vb
+		EnrollmentSystem\CourseForm.vb = EnrollmentSystem\CourseForm.vb
+		EnrollmentSystem\SubjectForm.Designer.vb = EnrollmentSystem\SubjectForm.Designer.vb
+		EnrollmentSystem\SubjectForm.vb = EnrollmentSystem\SubjectForm.vb
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -39,7 +39,11 @@ Public Class RegistrarDashboard
     End Sub
 
     Private Sub btnCourses_Click(sender As Object, e As EventArgs) Handles btnCourses.Click
-        LoadFormIntoPanel(New CourseSubjectForm())
+        LoadFormIntoPanel(New CourseForm())
+    End Sub
+
+    Private Sub btnSubjects_Click(sender As Object, e As EventArgs) Handles btnSubjects.Click
+        LoadFormIntoPanel(New SubjectForm())
     End Sub
 
     Private Sub btnSchedule_Click(sender As Object, e As EventArgs) Handles btnSchedule.Click
@@ -101,6 +105,14 @@ Public Class RegistrarDashboard
     End Sub
 
     Private Sub pnlMain_Paint(sender As Object, e As PaintEventArgs) Handles pnlMain.Paint
+
+    End Sub
+
+    Private Sub btnAssignschedule_Click(sender As Object, e As EventArgs) Handles btnAssignschedule.Click
+        LoadFormIntoPanel(New SectionScheduleForm())
+    End Sub
+
+    Private Sub pnlSidebar_Paint(sender As Object, e As PaintEventArgs) Handles pnlSidebar.Paint
 
     End Sub
 End Class

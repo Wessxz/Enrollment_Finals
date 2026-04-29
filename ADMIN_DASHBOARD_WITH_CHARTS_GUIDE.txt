@@ -1,0 +1,464 @@
+================================================================================
+           ADMIN DASHBOARD WITH CHARTS - IMPLEMENTATION GUIDE
+================================================================================
+
+OVERVIEW:
+This guide will help you add charts (Pie Chart and Bar Chart) to your Admin
+Dashboard similar to the screenshot you provided.
+
+================================================================================
+STEP 1: ADD CHART CONTROL TO TOOLBOX
+================================================================================
+
+1. Open Visual Studio
+2. Go to View → Toolbox
+3. Right-click on Toolbox → Choose Items
+4. In .NET Framework Components tab, search for "Chart"
+5. Check the box for "Chart" control
+6. Click OK
+
+The Chart control should now appear in your Toolbox under "Data" section.
+
+================================================================================
+STEP 2: ADD REQUIRED REFERENCE
+================================================================================
+
+1. Right-click on your project in Solution Explorer
+2. Select "Add Reference"
+3. In Assemblies tab, search for:
+   - System.Windows.Forms.DataVisualization
+4. Check the box and click OK
+
+================================================================================
+STEP 3: DESIGN THE NEW DASHBOARD LAYOUT
+================================================================================
+
+LAYOUT STRUCTURE:
+┌─────────────────────────────────────────────────────────────────────┐
+│  Admin Portal — Dashboard                                           │
+├─────────────────────────────────────────────────────────────────────┤
+│  [ENROLLED: 5]  [PENDING: 0]  [SECTIONS: 0]  [USERS: 0]            │
+├─────────────────────────────────────────────────────────────────────┤
+│  Analytical Filters:  [2025-2026 ▼]  [1st Semester ▼]             │
+├──────────────────────────────────┬──────────────────────────────────┤
+│  Enrollment by Program           │  Student Count per Program       │
+│  ┌────────────────────────────┐  │  ┌────────────────────────────┐ │
+│  │                            │  │  │                            │ │
+│  │     PIE CHART              │  │  │     BAR CHART              │ │
+│  │                            │  │  │                            │ │
+│  └────────────────────────────┘  │  └────────────────────────────┘ │
+├──────────────────────────────────┴──────────────────────────────────┤
+│  Section Capacity Status                                            │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │ DataGridView - Sections with capacity info                  │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+├─────────────────────────────────────────────────────────────────────┤
+│  Recent Enrollment Activity                                         │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │ DataGridView - Latest enrollments                           │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+STEP 4: ADD CONTROLS TO DESIGNER
+================================================================================
+
+Open AdminDashboard in Designer mode and add these controls:
+
+TOP STAT CARDS (Already exists, just modify labels):
+----------------------------------------------------
+- Change "Total Students" to "ENROLLED STUDENTS"
+- Change "System Users" to "PENDING ENROLLMENT"
+- Change "Enrolled" to "ACTIVE SECTIONS"
+- Keep "Total Revenue" as "ACTIVE USERS"
+
+FILTERS PANEL:
+--------------
+1. Add Panel: pnlFilters
+   - Location: (30, 250)
+   - Size: (900, 50)
+   - BackColor: White
+
+2. Add Label: lblFilterTitle
+   - Text: "Analytical Filters:"
+   - Location: (20, 15)
+   - Font: Segoe UI, 10pt
+
+3. Add ComboBox: cmbAcademicYear
+   - Location: (150, 12)
+   - Size: (150, 25)
+   - Items: 2024-2025, 2025-2026, 2026-2027
+
+4. Add ComboBox: cmbSemester
+   - Location: (320, 12)
+   - Size: (150, 25)
+   - Items: 1st Semester, 2nd Semester, Summer
+
+CHARTS PANEL:
+-------------
+1. Add Panel: pnlCharts
+   - Location: (30, 320)
+   - Size: (900, 300)
+   - BackColor: Transparent
+
+2. Add Chart: chartEnrollmentByProgram (PIE CHART)
+   - Location: (0, 0)
+   - Size: (440, 300)
+   - BackColor: White
+
+3. Add Chart: chartStudentCountByProgram (BAR CHART)
+   - Location: (460, 0)
+   - Size: (440, 300)
+   - BackColor: White
+
+SECTION CAPACITY TABLE:
+-----------------------
+1. Add Panel: pnlSectionCapacity
+   - Location: (30, 640)
+   - Size: (900, 200)
+   - BackColor: White
+
+2. Add Label: lblSectionCapacity
+   - Text: "Section Capacity Status"
+   - Location: (20, 10)
+   - Font: Segoe UI, 11pt, Bold
+
+3. Add DataGridView: dgvSectionCapacity
+   - Location: (20, 40)
+   - Size: (860, 150)
+
+RECENT ENROLLMENT TABLE:
+------------------------
+1. Add Panel: pnlRecentEnrollment
+   - Location: (30, 860)
+   - Size: (900, 200)
+   - BackColor: White
+
+2. Add Label: lblRecentEnrollment
+   - Text: "Recent Enrollment Activity"
+   - Location: (20, 10)
+   - Font: Segoe UI, 11pt, Bold
+
+3. Add DataGridView: dgvRecentEnrollment
+   - Location: (20, 40)
+   - Size: (860, 150)
+
+================================================================================
+STEP 5: CONFIGURE PIE CHART (Enrollment by Program)
+================================================================================
+
+In AdminDashboard.vb, add this code in Form_Load or a separate method:
+
+Private Sub ConfigurePieChart()
+    ' Clear existing series
+    chartEnrollmentByProgram.Series.Clear()
+    chartEnrollmentByProgram.ChartAreas.Clear()
+    
+    ' Add chart area
+    Dim chartArea As New DataVisualization.Charting.ChartArea()
+    chartEnrollmentByProgram.ChartAreas.Add(chartArea)
+    
+    ' Add series
+    Dim series As New DataVisualization.Charting.Series()
+    series.Name = "Enrollment"
+    series.ChartType = DataVisualization.Charting.SeriesChartType.Doughnut
+    series.IsValueShownAsLabel = True
+    series.LabelFormat = "{0}"
+    
+    ' Add data points (example)
+    series.Points.AddXY("BSCS", 1)
+    series.Points.AddXY("BSIT", 4)
+    
+    ' Set colors
+    series.Points(0).Color = System.Drawing.Color.FromArgb(59, 130, 246)  ' Blue
+    series.Points(1).Color = System.Drawing.Color.FromArgb(251, 146, 60)  ' Orange
+    
+    ' Add series to chart
+    chartEnrollmentByProgram.Series.Add(series)
+    
+    ' Configure chart appearance
+    chartEnrollmentByProgram.Titles.Clear()
+    chartEnrollmentByProgram.Titles.Add("Enrollment by Program")
+    chartEnrollmentByProgram.Titles(0).Font = New Font("Segoe UI", 11, FontStyle.Bold)
+    
+    ' Configure legend
+    chartEnrollmentByProgram.Legends.Clear()
+    Dim legend As New DataVisualization.Charting.Legend()
+    legend.Docking = DataVisualization.Charting.Docking.Bottom
+    chartEnrollmentByProgram.Legends.Add(legend)
+    
+    ' Set doughnut hole size (makes it look like donut)
+    series("DoughnutRadius") = "30"
+End Sub
+
+================================================================================
+STEP 6: CONFIGURE BAR CHART (Student Count per Program)
+================================================================================
+
+Private Sub ConfigureBarChart()
+    ' Clear existing series
+    chartStudentCountByProgram.Series.Clear()
+    chartStudentCountByProgram.ChartAreas.Clear()
+    
+    ' Add chart area
+    Dim chartArea As New DataVisualization.Charting.ChartArea()
+    chartStudentCountByProgram.ChartAreas.Add(chartArea)
+    
+    ' Add series
+    Dim series As New DataVisualization.Charting.Series()
+    series.Name = "Student Count"
+    series.ChartType = DataVisualization.Charting.SeriesChartType.Column
+    series.IsValueShownAsLabel = True
+    
+    ' Add data points (example)
+    series.Points.AddXY("BSCS", 1)
+    series.Points.AddXY("BSIT", 4)
+    
+    ' Set color
+    series.Color = System.Drawing.Color.FromArgb(127, 29, 29)  ' Maroon
+    
+    ' Add series to chart
+    chartStudentCountByProgram.Series.Add(series)
+    
+    ' Configure chart appearance
+    chartStudentCountByProgram.Titles.Clear()
+    chartStudentCountByProgram.Titles.Add("Student Count per Program")
+    chartStudentCountByProgram.Titles(0).Font = New Font("Segoe UI", 11, FontStyle.Bold)
+    
+    ' Configure axes
+    chartArea.AxisX.Title = "Program"
+    chartArea.AxisY.Title = "Student Count"
+    chartArea.AxisX.MajorGrid.Enabled = False
+    chartArea.AxisY.MajorGrid.LineColor = System.Drawing.Color.LightGray
+End Sub
+
+================================================================================
+STEP 7: LOAD DATA FROM DATABASE
+================================================================================
+
+Private Sub LoadChartData()
+    Try
+        openCon()
+        
+        ' ===== PIE CHART DATA =====
+        Dim pieQuery As String = 
+            "SELECT course, COUNT(*) as student_count 
+             FROM students 
+             GROUP BY course"
+        
+        Using cmd As New MySqlCommand(pieQuery, conn)
+            chartEnrollmentByProgram.Series(0).Points.Clear()
+            
+            Using dr As MySqlDataReader = cmd.ExecuteReader()
+                While dr.Read()
+                    Dim course As String = dr("course").ToString()
+                    Dim count As Integer = Convert.ToInt32(dr("student_count"))
+                    chartEnrollmentByProgram.Series(0).Points.AddXY(course, count)
+                End While
+            End Using
+        End Using
+        
+        ' ===== BAR CHART DATA =====
+        Dim barQuery As String = 
+            "SELECT course, COUNT(*) as student_count 
+             FROM students 
+             GROUP BY course"
+        
+        Using cmd As New MySqlCommand(barQuery, conn)
+            chartStudentCountByProgram.Series(0).Points.Clear()
+            
+            Using dr As MySqlDataReader = cmd.ExecuteReader()
+                While dr.Read()
+                    Dim course As String = dr("course").ToString()
+                    Dim count As Integer = Convert.ToInt32(dr("student_count"))
+                    chartStudentCountByProgram.Series(0).Points.AddXY(course, count)
+                End While
+            End Using
+        End Using
+        
+    Catch ex As Exception
+        MsgBox("Error loading chart data: " & ex.Message)
+    Finally
+        closeCon()
+    End Try
+End Sub
+
+================================================================================
+STEP 8: LOAD SECTION CAPACITY DATA
+================================================================================
+
+Private Sub LoadSectionCapacity()
+    Try
+        openCon()
+        
+        Dim query As String = 
+            "SELECT 
+                sec.section_name,
+                sec.course_code,
+                sec.max_slots,
+                COUNT(s.id) as enrolled_count,
+                (sec.max_slots - COUNT(s.id)) as available_slots,
+                CASE 
+                    WHEN COUNT(s.id) >= sec.max_slots THEN 'Full'
+                    WHEN COUNT(s.id) >= (sec.max_slots * 0.8) THEN 'Near Full'
+                    ELSE 'Available'
+                END as capacity_status
+             FROM sections sec
+             LEFT JOIN students s ON sec.section_id = s.section_id
+             GROUP BY sec.section_id
+             ORDER BY sec.section_name"
+        
+        Using cmd As New MySqlCommand(query, conn)
+            Dim dt As New DataTable()
+            Dim da As New MySqlDataAdapter(cmd)
+            da.Fill(dt)
+            
+            dgvSectionCapacity.DataSource = dt
+            
+            ' Format columns
+            dgvSectionCapacity.Columns("section_name").HeaderText = "Section Name"
+            dgvSectionCapacity.Columns("course_code").HeaderText = "Course Code"
+            dgvSectionCapacity.Columns("max_slots").HeaderText = "Max Slots"
+            dgvSectionCapacity.Columns("enrolled_count").HeaderText = "Enrolled"
+            dgvSectionCapacity.Columns("available_slots").HeaderText = "Available"
+            dgvSectionCapacity.Columns("capacity_status").HeaderText = "Status"
+        End Using
+        
+    Catch ex As Exception
+        MsgBox("Error loading section capacity: " & ex.Message)
+    Finally
+        closeCon()
+    End Try
+End Sub
+
+================================================================================
+STEP 9: LOAD RECENT ENROLLMENT DATA
+================================================================================
+
+Private Sub LoadRecentEnrollment()
+    Try
+        openCon()
+        
+        Dim query As String = 
+            "SELECT 
+                e.enrollment_date as activity_date,
+                s.student_id,
+                CONCAT(s.first_name, ' ', s.last_name) as student_name,
+                s.course as program,
+                CASE 
+                    WHEN e.enrollment_status = 'ENROLLED' THEN 'enrolled'
+                    WHEN e.enrollment_status = 'PENDING' THEN 'conditional'
+                    ELSE 'pending'
+                END as status
+             FROM enrollments e
+             INNER JOIN students s ON e.student_id = s.student_id
+             ORDER BY e.enrollment_date DESC
+             LIMIT 10"
+        
+        Using cmd As New MySqlCommand(query, conn)
+            Dim dt As New DataTable()
+            Dim da As New MySqlDataAdapter(cmd)
+            da.Fill(dt)
+            
+            dgvRecentEnrollment.DataSource = dt
+            
+            ' Format columns
+            dgvRecentEnrollment.Columns("activity_date").HeaderText = "Activity Date"
+            dgvRecentEnrollment.Columns("student_id").HeaderText = "Student ID"
+            dgvRecentEnrollment.Columns("student_name").HeaderText = "Student Name"
+            dgvRecentEnrollment.Columns("program").HeaderText = "Program"
+            dgvRecentEnrollment.Columns("status").HeaderText = "Status"
+        End Using
+        
+    Catch ex As Exception
+        MsgBox("Error loading recent enrollment: " & ex.Message)
+    Finally
+        closeCon()
+    End Try
+End Sub
+
+================================================================================
+STEP 10: CALL ALL METHODS IN FORM_LOAD
+================================================================================
+
+Private Sub AdminDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    ShowDashboard()
+    LoadDashboardStats()
+    
+    ' Configure charts
+    ConfigurePieChart()
+    ConfigureBarChart()
+    
+    ' Load data
+    LoadChartData()
+    LoadSectionCapacity()
+    LoadRecentEnrollment()
+    
+    ' Set default filter values
+    cmbAcademicYear.SelectedIndex = 0
+    cmbSemester.SelectedIndex = 0
+End Sub
+
+================================================================================
+STEP 11: ADD FILTER FUNCTIONALITY
+================================================================================
+
+Private Sub cmbAcademicYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbAcademicYear.SelectedIndexChanged
+    ' Reload data based on selected academic year
+    LoadChartData()
+    LoadSectionCapacity()
+    LoadRecentEnrollment()
+End Sub
+
+Private Sub cmbSemester_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbSemester.SelectedIndexChanged
+    ' Reload data based on selected semester
+    LoadChartData()
+    LoadSectionCapacity()
+    LoadRecentEnrollment()
+End Sub
+
+================================================================================
+STEP 12: IMPORTS NEEDED
+================================================================================
+
+Add this at the top of AdminDashboard.vb:
+
+Imports MySql.Data.MySqlClient
+Imports System.Windows.Forms.DataVisualization.Charting
+
+================================================================================
+SUMMARY OF CONTROLS TO ADD
+================================================================================
+
+1. pnlFilters (Panel)
+   - lblFilterTitle (Label)
+   - cmbAcademicYear (ComboBox)
+   - cmbSemester (ComboBox)
+
+2. pnlCharts (Panel)
+   - chartEnrollmentByProgram (Chart - Pie/Doughnut)
+   - chartStudentCountByProgram (Chart - Bar/Column)
+
+3. pnlSectionCapacity (Panel)
+   - lblSectionCapacity (Label)
+   - dgvSectionCapacity (DataGridView)
+
+4. pnlRecentEnrollment (Panel)
+   - lblRecentEnrollment (Label)
+   - dgvRecentEnrollment (DataGridView)
+
+================================================================================
+TIPS FOR BETTER CHARTS
+================================================================================
+
+1. Use consistent colors across charts
+2. Add tooltips for better UX
+3. Make charts responsive to window resize
+4. Add export functionality (export to image/PDF)
+5. Add drill-down functionality (click chart to see details)
+
+================================================================================
+END OF GUIDE
+================================================================================
+
+Kung may tanong ka or need help sa specific part, just ask!
