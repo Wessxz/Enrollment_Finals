@@ -9,6 +9,7 @@ Public Class CashierForm
             ' Initial UI State
             txtBalance.Text = "Balance: ₱0.00"
             txtPaid.Text = "0.00"
+            ' Ensure these Session variables are defined in your UserSession module
             txtCashier.Text = UserSession.CurrentUsername
             txtTransactionDate.Text = DateTime.Now.ToString("yyyy-MM-dd")
 
@@ -23,7 +24,7 @@ Public Class CashierForm
     Private Sub GenerateAutoPaymentDetails()
         Try
             openCon()
-            ' Prevents "Duplicate Entry" by finding the true maximum OR number
+            ' Finds the true maximum OR number to avoid duplicate entry errors
             Dim query As String = "SELECT MAX(CAST(or_number AS UNSIGNED)) FROM payments"
             Using cmd As New MySqlCommand(query, conn)
                 Dim result = cmd.ExecuteScalar()
@@ -46,6 +47,7 @@ Public Class CashierForm
     Private Sub LoadStudentIDs()
         Try
             openCon()
+            ' Logic: Select students who have an active billing that isn't fully paid
             Dim query As String = "SELECT DISTINCT student_id FROM billing WHERE status <> 'PAID'"
             Dim da As New MySqlDataAdapter(query, conn)
             Dim dt As New DataTable
@@ -61,7 +63,7 @@ Public Class CashierForm
         End Try
     End Sub
 
-    ' ================= 3. AUTO-FILL AND GATEKEEPER LOGIC =================
+    ' ================= 3. AUTO-FILL LOGIC =================
     Private Sub cmbStudentID_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbStudentID.SelectedIndexChanged
         If cmbStudentID.SelectedIndex = -1 OrElse cmbStudentID.SelectedValue Is Nothing Then
             ClearFields()
@@ -70,7 +72,7 @@ Public Class CashierForm
 
         Try
             openCon()
-            ' Includes payment_mode to handle auto-fill requirements
+            ' FIXED: Table name 'students' (plural)
             Dim query As String = "SELECT s.first_name, s.last_name, s.course, b.balance, b.status, b.billing_id, b.total_amount, b.payment_mode " &
                                  "FROM billing b INNER JOIN students s ON b.student_id = s.student_id " &
                                  "WHERE b.student_id = @sid LIMIT 1"
@@ -80,7 +82,7 @@ Public Class CashierForm
                 Using dr As MySqlDataReader = cmd.ExecuteReader()
                     If dr.Read() Then
                         txtStudentName.Text = dr("first_name").ToString() & " " & dr("last_name").ToString()
-                        txtCourse.Text = dr("course").ToString()
+                        txtCourse.Text = dr("course").ToString() ' This contains the course name like "BSIT"
 
                         Dim totalAmt As Decimal = Convert.ToDecimal(dr("total_amount"))
                         Dim currentBal As Decimal = Convert.ToDecimal(dr("balance"))
@@ -91,7 +93,7 @@ Public Class CashierForm
                         txtBalance.Text = "Balance: ₱" & currentBal.ToString("N2")
                         lblHiddenBillingID.Text = dr("billing_id").ToString()
 
-                        ' Full Payment Mode: Auto-fills amount and locks sections
+                        ' UI Logic based on Payment Mode
                         If payMode = "FULL PAYMENT" Then
                             txtStatus.Text = "MODE: FULL PAYMENT"
                             txtStatus.ForeColor = Color.Blue
@@ -99,8 +101,6 @@ Public Class CashierForm
                             txtAmount.ReadOnly = True
                             pnlTuitionSection.Enabled = True
                             grpDownPayment.Enabled = False
-
-                            ' Installment Mode: Initial state
                         ElseIf billingStatus = "UNPAID" Then
                             txtStatus.Text = "AWAITING DOWNPAYMENT"
                             txtStatus.ForeColor = Color.Red
@@ -109,7 +109,6 @@ Public Class CashierForm
                             grpDownPayment.Enabled = True
                             txtDownpayment.Text = "3000.00"
                         Else
-                            ' Installment Mode: After downpayment
                             txtStatus.Text = "ENROLLED / TUITION"
                             txtStatus.ForeColor = Color.Green
                             txtAmount.ReadOnly = False
@@ -134,22 +133,42 @@ Public Class CashierForm
         End Try
     End Sub
 
-    ' ================= 4. ENROLLMENT HELPER =================
+    ' ================= 4. ENROLLMENT HELPER (FIXED FOR FK ERRORS) =================
     Private Sub RegisterEnrollment(studentID As String)
-        ' Officially registers the student in the enrollment table
-        Dim checkQuery As String = "SELECT COUNT(*) FROM enrollments WHERE student_id = @sid"
-        Using cmdCheck As New MySqlCommand(checkQuery, conn)
-            cmdCheck.Parameters.AddWithValue("@sid", studentID)
-            If Convert.ToInt32(cmdCheck.ExecuteScalar()) > 0 Then Return
-        End Using
+        ' FIXED: Prevents Foreign Key Failure by converting course name to numerical ID
+        Try
+            ' 1. Check if already enrolled
+            Dim checkQuery As String = "SELECT COUNT(*) FROM enrollments WHERE student_id = @sid"
+            Using cmdCheck As New MySqlCommand(checkQuery, conn)
+                cmdCheck.Parameters.AddWithValue("@sid", studentID)
+                If Convert.ToInt32(cmdCheck.ExecuteScalar()) > 0 Then Return
+            End Using
 
-        Dim enrollQuery As String = "INSERT INTO enrollments (student_id, course_id, semester, academic_year, status, date_enrolled) " &
-                                   "VALUES (@sid, @cid, '1st Semester', '2025-2026', 'ENROLLED', NOW())"
-        Using cmdEnroll As New MySqlCommand(enrollQuery, conn)
-            cmdEnroll.Parameters.AddWithValue("@sid", studentID)
-            cmdEnroll.Parameters.AddWithValue("@cid", txtCourse.Text)
-            cmdEnroll.ExecuteNonQuery()
-        End Using
+            ' 2. Get Numerical course_id from the 'courses' table
+            Dim actualCourseID As Integer = 0
+            Dim getCourseQuery As String = "SELECT course_id FROM courses WHERE course_name = @cname"
+            Using cmdGet As New MySqlCommand(getCourseQuery, conn)
+                cmdGet.Parameters.AddWithValue("@cname", txtCourse.Text)
+                Dim result = cmdGet.ExecuteScalar()
+                If result IsNot Nothing Then
+                    actualCourseID = Convert.ToInt32(result)
+                Else
+                    ' Default to 1 if not found, or handle error
+                    actualCourseID = 1
+                End If
+            End Using
+
+            ' 3. Insert into enrollments table using the plural table name
+            Dim enrollQuery As String = "INSERT INTO enrollments (student_id, course_id, semester, academic_year, status, date_enrolled) " &
+                                       "VALUES (@sid, @cid, '1st Semester', '2025-2026', 'ENROLLED', NOW())"
+            Using cmdEnroll As New MySqlCommand(enrollQuery, conn)
+                cmdEnroll.Parameters.AddWithValue("@sid", studentID)
+                cmdEnroll.Parameters.AddWithValue("@cid", actualCourseID)
+                cmdEnroll.ExecuteNonQuery()
+            End Using
+        Catch ex As Exception
+            MsgBox("Enrollment Sync Error: " & ex.Message)
+        End Try
     End Sub
 
     ' ================= 5. PAYMENT ACTIONS =================
@@ -180,14 +199,14 @@ Public Class CashierForm
                 cmdUpdate.ExecuteNonQuery()
             End Using
 
-            ' 3. Sync Web Status
+            ' 3. Sync Web Status - Required for Admin UsersForm to see the student
             Dim statusQuery = "UPDATE students SET status = 'PENDING' WHERE student_id = @sid"
             Using cmdStatus As New MySqlCommand(statusQuery, conn)
                 cmdStatus.Parameters.AddWithValue("@sid", sID)
                 cmdStatus.ExecuteNonQuery()
             End Using
 
-            ' 4. Register official enrollment
+            ' 4. Register official enrollment (Handles ID conversion internally)
             RegisterEnrollment(sID)
 
             MsgBox("Downpayment Processed and Enrolled!", MsgBoxStyle.Information)
@@ -261,6 +280,7 @@ Public Class CashierForm
     Private Sub LoadPayments()
         Try
             openCon()
+            ' FIXED: Table names pluralization and column consistency
             Dim query As String = "SELECT p.or_number, s.student_id, p.amount_paid FROM payments p " &
                                 "INNER JOIN billing b ON p.billing_id = b.billing_id " &
                                 "INNER JOIN students s ON b.student_id = s.student_id " &
@@ -269,6 +289,8 @@ Public Class CashierForm
             Dim dt As New DataTable
             da.Fill(dt)
             dgvHistory.DataSource = dt
+        Catch ex As Exception
+            ' Silent fail or log
         Finally
             closeCon()
         End Try

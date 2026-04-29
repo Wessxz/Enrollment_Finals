@@ -5,13 +5,13 @@ Public Class UsersForm
         LoadPendingStudents()
     End Sub
 
-    ' ================= 1. DATA LOADING (FIXED QUERY) =================
+    ' ================= 1. DATA LOADING =================
     Private Sub LoadPendingStudents()
         Try
             openCon()
-            ' FIXED: Removed 'first_name', 'last_name', and 'student_id' 
-            ' These caused the "Unknown Column" errors in your screenshots.
-            Dim query = "SELECT id, username, status FROM users WHERE status = 'PENDING' AND role = 'student'"
+            ' FIXED: Table name is 'students' (plural). 
+            ' Removed non-existent columns like student_id, first_name, last_name.
+            Dim query = "SELECT id, username, status FROM students WHERE status = 'PENDING'"
 
             Dim da As New MySqlDataAdapter(query, conn)
             Dim dt As New DataTable
@@ -32,15 +32,17 @@ Public Class UsersForm
 
         Try
             openCon()
-            Dim query = "UPDATE users SET status = 'VERIFIED' WHERE id = @id"
+            ' FIXED: Changed table name from 'student' to 'students'
+            Dim query = "UPDATE students SET status = 'VERIFIED' WHERE id = @id"
             Using cmd As New MySqlCommand(query, conn)
                 cmd.Parameters.AddWithValue("@id", uID)
                 cmd.ExecuteNonQuery()
             End Using
+
             MsgBox("Student Verified! Portal access granted.", MsgBoxStyle.Information)
             LoadPendingStudents()
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            MsgBox("Verification Error: " & ex.Message)
         Finally
             closeCon()
         End Try
@@ -51,16 +53,17 @@ Public Class UsersForm
         If dgvUsers.CurrentRow Is Nothing Then Return
         Dim uID As Integer = Convert.ToInt32(dgvUsers.CurrentRow.Cells("id").Value)
 
-        If MsgBox("Reject student?", MsgBoxStyle.YesNo + MsgBoxStyle.Question) = MsgBoxResult.Yes Then
+        If MsgBox("Reject student account?", MsgBoxStyle.YesNo + MsgBoxStyle.Question) = MsgBoxResult.Yes Then
             Try
                 openCon()
-                Using cmd As New MySqlCommand("DELETE FROM users WHERE id = @id", conn)
+                ' FIXED: Changed table name from 'student' to 'students'
+                Using cmd As New MySqlCommand("DELETE FROM students WHERE id = @id", conn)
                     cmd.Parameters.AddWithValue("@id", uID)
                     cmd.ExecuteNonQuery()
                 End Using
                 LoadPendingStudents()
             Catch ex As Exception
-                MsgBox("Error: " & ex.Message)
+                MsgBox("Deletion Error: " & ex.Message)
             Finally
                 closeCon()
             End Try

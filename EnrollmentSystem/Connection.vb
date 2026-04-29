@@ -11,7 +11,7 @@ Module Connection
     Public Sub openCon()
         Try
             If conn.State = ConnectionState.Closed Then
-                conn.ConnectionString = "server=localhost;user id=root;password=;database=enrollment_system_db_1"
+                conn.ConnectionString = "server=localhost;user id=root;password=;database=enrollment_system_db"
                 conn.Open()
             End If
         Catch ex As Exception

@@ -18,7 +18,7 @@ Partial Class UsersForm
         '
         Me.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvUsers.Location = New System.Drawing.Point(67, 86)
-        Me.dgvUsers.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvUsers.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvUsers.Name = "dgvUsers"
         Me.dgvUsers.RowHeadersWidth = 51
         Me.dgvUsers.Size = New System.Drawing.Size(933, 308)
@@ -27,7 +27,7 @@ Partial Class UsersForm
         'btnLoad
         '
         Me.btnLoad.Location = New System.Drawing.Point(240, 418)
-        Me.btnLoad.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnLoad.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLoad.Name = "btnLoad"
         Me.btnLoad.Size = New System.Drawing.Size(160, 49)
         Me.btnLoad.TabIndex = 2
@@ -37,7 +37,7 @@ Partial Class UsersForm
         'btnVerify
         '
         Me.btnVerify.Location = New System.Drawing.Point(453, 418)
-        Me.btnVerify.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnVerify.Margin = New System.Windows.Forms.Padding(4)
         Me.btnVerify.Name = "btnVerify"
         Me.btnVerify.Size = New System.Drawing.Size(160, 49)
         Me.btnVerify.TabIndex = 3
@@ -47,7 +47,7 @@ Partial Class UsersForm
         'btnReject
         '
         Me.btnReject.Location = New System.Drawing.Point(667, 418)
-        Me.btnReject.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnReject.Margin = New System.Windows.Forms.Padding(4)
         Me.btnReject.Name = "btnReject"
         Me.btnReject.Size = New System.Drawing.Size(160, 49)
         Me.btnReject.TabIndex = 4
@@ -75,7 +75,7 @@ Partial Class UsersForm
         Me.Controls.Add(Me.btnVerify)
         Me.Controls.Add(Me.btnLoad)
         Me.Controls.Add(Me.dgvUsers)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "UsersForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "User Verification"
