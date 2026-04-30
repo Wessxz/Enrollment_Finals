@@ -43,7 +43,7 @@ Partial Class SectionForm
         '
         'pnlTop
         '
-        Me.pnlTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.pnlTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.pnlTop.Controls.Add(Me.lblTitle)
         Me.pnlTop.Controls.Add(Me.lblCount)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
@@ -75,7 +75,7 @@ Partial Class SectionForm
         '
         'pnlLeft
         '
-        Me.pnlLeft.BackColor = System.Drawing.Color.White
+        Me.pnlLeft.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.pnlLeft.Controls.Add(Me.lblSectionName)
         Me.pnlLeft.Controls.Add(Me.txtSectionName)
         Me.pnlLeft.Controls.Add(Me.lblCourse)
@@ -201,7 +201,7 @@ Partial Class SectionForm
         '
         'btnAdd
         '
-        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.btnAdd.FlatAppearance.BorderSize = 0
         Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAdd.ForeColor = System.Drawing.Color.White
@@ -214,7 +214,7 @@ Partial Class SectionForm
         '
         'btnUpdate
         '
-        Me.btnUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.btnUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.btnUpdate.FlatAppearance.BorderSize = 0
         Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUpdate.ForeColor = System.Drawing.Color.White
@@ -240,7 +240,7 @@ Partial Class SectionForm
         '
         'btnClear
         '
-        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(107, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.btnClear.FlatAppearance.BorderSize = 0
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.ForeColor = System.Drawing.Color.White
@@ -271,7 +271,7 @@ Partial Class SectionForm
         '
         'SectionForm
         '
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1100, 680)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.pnlLeft)
@@ -280,6 +280,7 @@ Partial Class SectionForm
         Me.Name = "SectionForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Section Management"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnlTop.ResumeLayout(False)
         Me.pnlTop.PerformLayout()
         Me.pnlLeft.ResumeLayout(False)

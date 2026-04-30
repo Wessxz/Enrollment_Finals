@@ -52,13 +52,14 @@ Partial Class AdminDashboard
         Me.ClientSize = New System.Drawing.Size(1200, 700)
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin Dashboard"
-        Me.BackColor = System.Drawing.Color.FromArgb(245, 247, 250)
+        Me.BackColor = System.Drawing.Color.FromArgb(237, 233, 254)
         Me.MinimumSize = New System.Drawing.Size(1200, 700)
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
 
         ' ===== SIDEBAR =====
         Me.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlSidebar.Width = 240
-        Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(15, 23, 42)
+        Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(49, 46, 129)
         Me.pnlSidebar.Controls.Add(Me.lblSidebarBrand)
         Me.pnlSidebar.Controls.Add(Me.pnlNavDivider)
         Me.pnlSidebar.Controls.Add(Me.btnDashboard)
@@ -75,7 +76,7 @@ Partial Class AdminDashboard
 
         Me.pnlNavDivider.Location = New System.Drawing.Point(20, 72)
         Me.pnlNavDivider.Size = New System.Drawing.Size(200, 1)
-        Me.pnlNavDivider.BackColor = System.Drawing.Color.FromArgb(51, 65, 85)
+        Me.pnlNavDivider.BackColor = System.Drawing.Color.FromArgb(99, 102, 241)
 
         Dim sideButtons As System.Windows.Forms.Button() = {Me.btnDashboard, Me.btnUsers, Me.btnReports, Me.btnManageAccount}
         Dim sideTexts As String() = {"  Dashboard", "  User Verification", "  Reports", "  Manage Accounts"}
@@ -87,7 +88,7 @@ Partial Class AdminDashboard
             sideButtons(i).FlatStyle = System.Windows.Forms.FlatStyle.Flat
             sideButtons(i).FlatAppearance.BorderSize = 0
             sideButtons(i).BackColor = System.Drawing.Color.Transparent
-            sideButtons(i).ForeColor = System.Drawing.Color.FromArgb(148, 163, 184)
+            sideButtons(i).ForeColor = System.Drawing.Color.FromArgb(221, 214, 254)
             sideButtons(i).Font = New System.Drawing.Font("Segoe UI", 10)
             sideButtons(i).TextAlign = System.Drawing.ContentAlignment.MiddleLeft
             sideButtons(i).Cursor = System.Windows.Forms.Cursors.Hand
@@ -108,18 +109,18 @@ Partial Class AdminDashboard
         ' ===== TOP BAR =====
         Me.pnlTopBar.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTopBar.Height = 64
-        Me.pnlTopBar.BackColor = System.Drawing.Color.White
+        Me.pnlTopBar.BackColor = System.Drawing.Color.FromArgb(67, 56, 202)
         Me.pnlTopBar.Controls.Add(Me.lblTitle)
 
         Me.lblTitle.Text = "Admin Dashboard"
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 14, System.Drawing.FontStyle.Bold)
-        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(17, 24, 39)
+        Me.lblTitle.ForeColor = System.Drawing.Color.White
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Location = New System.Drawing.Point(24, 18)
 
         ' ===== CONTENT =====
         Me.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlContent.BackColor = System.Drawing.Color.FromArgb(245, 247, 250)
+        Me.pnlContent.BackColor = System.Drawing.Color.FromArgb(237, 233, 254)
         Me.pnlContent.Controls.Add(Me.pnlDashboard)
 
         Me.pnlDashboard.Dock = System.Windows.Forms.DockStyle.Fill
@@ -129,7 +130,7 @@ Partial Class AdminDashboard
 
         Me.lblWelcome.Text = "Overview"
         Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI", 12, System.Drawing.FontStyle.Bold)
-        Me.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(55, 65, 81)
+        Me.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(49, 46, 129)
         Me.lblWelcome.AutoSize = True
         Me.lblWelcome.Location = New System.Drawing.Point(30, 30)
 
@@ -143,10 +144,10 @@ Partial Class AdminDashboard
 
         Dim cards As System.Windows.Forms.Panel() = {Me.cardStudents, Me.cardUsers, Me.cardEnrolled, Me.cardRevenue}
         Dim cardColors As System.Drawing.Color() = {
-            System.Drawing.Color.FromArgb(37, 99, 235),
-            System.Drawing.Color.FromArgb(5, 150, 105),
+            System.Drawing.Color.FromArgb(67, 56, 202),
+            System.Drawing.Color.FromArgb(99, 102, 241),
             System.Drawing.Color.FromArgb(124, 58, 237),
-            System.Drawing.Color.FromArgb(217, 119, 6)
+            System.Drawing.Color.FromArgb(139, 92, 246)
         }
         Dim cardX As Integer = 0
         For i As Integer = 0 To cards.Length - 1
@@ -162,7 +163,7 @@ Partial Class AdminDashboard
 
         Me.lblCardStudentsIcon.Text = "👥"
         Me.lblCardStudentsIcon.Font = New System.Drawing.Font("Segoe UI", 20)
-        Me.lblCardStudentsIcon.ForeColor = System.Drawing.Color.FromArgb(191, 219, 254)
+        Me.lblCardStudentsIcon.ForeColor = System.Drawing.Color.FromArgb(221, 214, 254)
         Me.lblCardStudentsIcon.AutoSize = True
         Me.lblCardStudentsIcon.Location = New System.Drawing.Point(16, 14)
 
@@ -174,7 +175,7 @@ Partial Class AdminDashboard
 
         Me.lblStudents.Text = "Total Students"
         Me.lblStudents.Font = New System.Drawing.Font("Segoe UI", 9)
-        Me.lblStudents.ForeColor = System.Drawing.Color.FromArgb(191, 219, 254)
+        Me.lblStudents.ForeColor = System.Drawing.Color.FromArgb(221, 214, 254)
         Me.lblStudents.AutoSize = True
         Me.lblStudents.Location = New System.Drawing.Point(16, 105)
 
@@ -184,7 +185,7 @@ Partial Class AdminDashboard
 
         Me.lblCardUsersIcon.Text = "🔑"
         Me.lblCardUsersIcon.Font = New System.Drawing.Font("Segoe UI", 20)
-        Me.lblCardUsersIcon.ForeColor = System.Drawing.Color.FromArgb(167, 243, 208)
+        Me.lblCardUsersIcon.ForeColor = System.Drawing.Color.FromArgb(221, 214, 254)
         Me.lblCardUsersIcon.AutoSize = True
         Me.lblCardUsersIcon.Location = New System.Drawing.Point(16, 14)
 
@@ -196,7 +197,7 @@ Partial Class AdminDashboard
 
         Me.lblUsers.Text = "System Users"
         Me.lblUsers.Font = New System.Drawing.Font("Segoe UI", 9)
-        Me.lblUsers.ForeColor = System.Drawing.Color.FromArgb(167, 243, 208)
+        Me.lblUsers.ForeColor = System.Drawing.Color.FromArgb(221, 214, 254)
         Me.lblUsers.AutoSize = True
         Me.lblUsers.Location = New System.Drawing.Point(16, 105)
 
@@ -228,7 +229,7 @@ Partial Class AdminDashboard
 
         Me.lblCardRevenueIcon.Text = "💰"
         Me.lblCardRevenueIcon.Font = New System.Drawing.Font("Segoe UI", 20)
-        Me.lblCardRevenueIcon.ForeColor = System.Drawing.Color.FromArgb(253, 230, 138)
+        Me.lblCardRevenueIcon.ForeColor = System.Drawing.Color.FromArgb(221, 214, 254)
         Me.lblCardRevenueIcon.AutoSize = True
         Me.lblCardRevenueIcon.Location = New System.Drawing.Point(16, 14)
 
@@ -240,7 +241,7 @@ Partial Class AdminDashboard
 
         Me.lblRevenue.Text = "Total Revenue"
         Me.lblRevenue.Font = New System.Drawing.Font("Segoe UI", 9)
-        Me.lblRevenue.ForeColor = System.Drawing.Color.FromArgb(253, 230, 138)
+        Me.lblRevenue.ForeColor = System.Drawing.Color.FromArgb(221, 214, 254)
         Me.lblRevenue.AutoSize = True
         Me.lblRevenue.Location = New System.Drawing.Point(16, 105)
 

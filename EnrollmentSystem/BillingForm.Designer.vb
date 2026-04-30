@@ -41,6 +41,7 @@ Partial Class BillingForm
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.lblTitle.Location = New System.Drawing.Point(300, 20)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(359, 41)
@@ -49,7 +50,7 @@ Partial Class BillingForm
         '
         'pnlStudent
         '
-        Me.pnlStudent.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.pnlStudent.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.pnlStudent.Controls.Add(Me.cmbStudentID)
         Me.pnlStudent.Controls.Add(Me.lblStudentID)
         Me.pnlStudent.Controls.Add(Me.lblStudentName)
@@ -235,6 +236,10 @@ Partial Class BillingForm
         '
         'btnCompute
         '
+        Me.btnCompute.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
+        Me.btnCompute.FlatAppearance.BorderSize = 0
+        Me.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCompute.ForeColor = System.Drawing.Color.White
         Me.btnCompute.Location = New System.Drawing.Point(20, 320)
         Me.btnCompute.Name = "btnCompute"
         Me.btnCompute.Size = New System.Drawing.Size(75, 23)
@@ -243,6 +248,10 @@ Partial Class BillingForm
         '
         'btnSave
         '
+        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.btnSave.FlatAppearance.BorderSize = 0
+        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSave.ForeColor = System.Drawing.Color.White
         Me.btnSave.Location = New System.Drawing.Point(110, 320)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(75, 23)
@@ -251,6 +260,10 @@ Partial Class BillingForm
         '
         'btnClear
         '
+        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(246, Byte), Integer))
+        Me.btnClear.FlatAppearance.BorderSize = 0
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.ForeColor = System.Drawing.Color.White
         Me.btnClear.Location = New System.Drawing.Point(190, 320)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(75, 23)
@@ -277,7 +290,7 @@ Partial Class BillingForm
         '
         'BillingForm
         '
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1000, 687)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.pnlStudent)
@@ -287,6 +300,7 @@ Partial Class BillingForm
         Me.Name = "BillingForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Billing Management"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnlStudent.ResumeLayout(False)
         Me.pnlStudent.PerformLayout()
         Me.pnlFees.ResumeLayout(False)

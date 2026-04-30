@@ -54,7 +54,7 @@ Partial Class FacultyDashboard
         '
         'pnlSidebar
         '
-        Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.pnlSidebar.Controls.Add(Me.lblSidebarBrand)
         Me.pnlSidebar.Controls.Add(Me.pnlNavDivider)
         Me.pnlSidebar.Controls.Add(Me.btnDashboard)
@@ -81,7 +81,7 @@ Partial Class FacultyDashboard
         '
         'pnlNavDivider
         '
-        Me.pnlNavDivider.BackColor = System.Drawing.Color.FromArgb(CType(CType(93, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(126, Byte), Integer))
+        Me.pnlNavDivider.BackColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.pnlNavDivider.Location = New System.Drawing.Point(15, 60)
         Me.pnlNavDivider.Name = "pnlNavDivider"
         Me.pnlNavDivider.Size = New System.Drawing.Size(210, 2)
@@ -89,7 +89,7 @@ Partial Class FacultyDashboard
         '
         'btnDashboard
         '
-        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.btnDashboard.FlatAppearance.BorderSize = 0
         Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDashboard.Font = New System.Drawing.Font("Segoe UI", 10.0!)
@@ -160,7 +160,7 @@ Partial Class FacultyDashboard
         '
         'pnlTopBar
         '
-        Me.pnlTopBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.pnlTopBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.pnlTopBar.Controls.Add(Me.lblTitle)
         Me.pnlTopBar.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTopBar.Location = New System.Drawing.Point(240, 0)
@@ -181,7 +181,7 @@ Partial Class FacultyDashboard
         '
         'pnlMain
         '
-        Me.pnlMain.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.pnlMain.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.pnlMain.Controls.Add(Me.pnlScheduleSection)
         Me.pnlMain.Controls.Add(Me.pnlOverview)
         Me.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill
@@ -236,7 +236,7 @@ Partial Class FacultyDashboard
         '
         Me.lblScheduleTitle.AutoSize = True
         Me.lblScheduleTitle.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Bold)
-        Me.lblScheduleTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.lblScheduleTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.lblScheduleTitle.Location = New System.Drawing.Point(15, 15)
         Me.lblScheduleTitle.Name = "lblScheduleTitle"
         Me.lblScheduleTitle.Size = New System.Drawing.Size(345, 25)
@@ -259,7 +259,7 @@ Partial Class FacultyDashboard
         '
         Me.lblOverviewTitle.AutoSize = True
         Me.lblOverviewTitle.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.lblOverviewTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.lblOverviewTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.lblOverviewTitle.Location = New System.Drawing.Point(5, 5)
         Me.lblOverviewTitle.Name = "lblOverviewTitle"
         Me.lblOverviewTitle.Size = New System.Drawing.Size(86, 23)
@@ -281,7 +281,7 @@ Partial Class FacultyDashboard
         '
         Me.lblTotalClassesValue.AutoSize = True
         Me.lblTotalClassesValue.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold)
-        Me.lblTotalClassesValue.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.lblTotalClassesValue.ForeColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.lblTotalClassesValue.Location = New System.Drawing.Point(15, 30)
         Me.lblTotalClassesValue.Name = "lblTotalClassesValue"
         Me.lblTotalClassesValue.Size = New System.Drawing.Size(46, 54)
@@ -314,7 +314,7 @@ Partial Class FacultyDashboard
         '
         Me.lblTotalStudentsValue.AutoSize = True
         Me.lblTotalStudentsValue.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold)
-        Me.lblTotalStudentsValue.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(96, Byte), Integer))
+        Me.lblTotalStudentsValue.ForeColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.lblTotalStudentsValue.Location = New System.Drawing.Point(15, 30)
         Me.lblTotalStudentsValue.Name = "lblTotalStudentsValue"
         Me.lblTotalStudentsValue.Size = New System.Drawing.Size(46, 54)
@@ -347,7 +347,7 @@ Partial Class FacultyDashboard
         '
         Me.lblPendingGradesValue.AutoSize = True
         Me.lblPendingGradesValue.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold)
-        Me.lblPendingGradesValue.ForeColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.lblPendingGradesValue.ForeColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(237, Byte), Integer))
         Me.lblPendingGradesValue.Location = New System.Drawing.Point(15, 30)
         Me.lblPendingGradesValue.Name = "lblPendingGradesValue"
         Me.lblPendingGradesValue.Size = New System.Drawing.Size(46, 54)
@@ -367,7 +367,7 @@ Partial Class FacultyDashboard
         '
         'FacultyDashboard
         '
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1300, 700)
         Me.Controls.Add(Me.pnlMain)
         Me.Controls.Add(Me.pnlTopBar)
@@ -376,6 +376,7 @@ Partial Class FacultyDashboard
         Me.Name = "FacultyDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Faculty Dashboard"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnlSidebar.ResumeLayout(False)
         Me.pnlSidebar.PerformLayout()
         Me.pnlTopBar.ResumeLayout(False)

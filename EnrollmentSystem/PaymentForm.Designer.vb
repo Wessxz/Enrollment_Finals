@@ -19,6 +19,7 @@ Partial Class PaymentForm
         'lblTitle
         '
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.lblTitle.Location = New System.Drawing.Point(250, 10)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(538, 53)
@@ -49,6 +50,10 @@ Partial Class PaymentForm
         '
         'btnPay
         '
+        Me.btnPay.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
+        Me.btnPay.FlatAppearance.BorderSize = 0
+        Me.btnPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPay.ForeColor = System.Drawing.Color.White
         Me.btnPay.Location = New System.Drawing.Point(20, 110)
         Me.btnPay.Name = "btnPay"
         Me.btnPay.Size = New System.Drawing.Size(75, 23)
@@ -57,6 +62,10 @@ Partial Class PaymentForm
         '
         'btnLoad
         '
+        Me.btnLoad.BackColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.btnLoad.FlatAppearance.BorderSize = 0
+        Me.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLoad.ForeColor = System.Drawing.Color.White
         Me.btnLoad.Location = New System.Drawing.Point(120, 110)
         Me.btnLoad.Name = "btnLoad"
         Me.btnLoad.Size = New System.Drawing.Size(75, 23)
@@ -74,6 +83,7 @@ Partial Class PaymentForm
         '
         'PaymentForm
         '
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 400)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.cmbBilling)
@@ -85,6 +95,7 @@ Partial Class PaymentForm
         Me.Name = "PaymentForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Payment Module"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.dgvPayments, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

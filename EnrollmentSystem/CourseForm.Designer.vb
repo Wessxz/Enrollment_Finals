@@ -36,14 +36,14 @@ Partial Class CourseForm
         ' lblTitle
         Me.lblTitle.Text = "COURSE MANAGEMENT"
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 16, System.Drawing.FontStyle.Bold)
-        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(30, 30, 60)
+        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(49, 46, 129)
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Location = New System.Drawing.Point(20, 18)
 
         ' pnlForm
         Me.pnlForm.Location = New System.Drawing.Point(20, 65)
         Me.pnlForm.Size = New System.Drawing.Size(960, 75)
-        Me.pnlForm.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.pnlForm.BackColor = System.Drawing.Color.FromArgb(237, 233, 254)
 
         ' lblCourseCode
         Me.lblCourseCode.Text = "Course Code"
@@ -85,7 +85,7 @@ Partial Class CourseForm
         Me.btnAdd.Text = "Add"
         Me.btnAdd.Location = New System.Drawing.Point(705, 15)
         Me.btnAdd.Size = New System.Drawing.Size(60, 28)
-        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(30, 30, 60)
+        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(67, 56, 202)
         Me.btnAdd.ForeColor = System.Drawing.Color.White
         Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAdd.FlatAppearance.BorderSize = 0
@@ -95,7 +95,7 @@ Partial Class CourseForm
         Me.btnUpdate.Text = "Update"
         Me.btnUpdate.Location = New System.Drawing.Point(775, 15)
         Me.btnUpdate.Size = New System.Drawing.Size(75, 28)
-        Me.btnUpdate.BackColor = System.Drawing.Color.FromArgb(39, 174, 96)
+        Me.btnUpdate.BackColor = System.Drawing.Color.FromArgb(99, 102, 241)
         Me.btnUpdate.ForeColor = System.Drawing.Color.White
         Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUpdate.FlatAppearance.BorderSize = 0
@@ -115,7 +115,7 @@ Partial Class CourseForm
         Me.btnClear.Text = "Clear"
         Me.btnClear.Location = New System.Drawing.Point(705, 48)
         Me.btnClear.Size = New System.Drawing.Size(60, 22)
-        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(149, 165, 166)
+        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(139, 92, 246)
         Me.btnClear.ForeColor = System.Drawing.Color.White
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.FlatAppearance.BorderSize = 0
@@ -134,7 +134,7 @@ Partial Class CourseForm
         Me.dgvCourses.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvCourses.ColumnHeadersHeight = 35
         Me.dgvCourses.RowTemplate.Height = 30
-        Me.dgvCourses.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(30, 30, 60)
+        Me.dgvCourses.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(67, 56, 202)
         Me.dgvCourses.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.Color.White
         Me.dgvCourses.ColumnHeadersDefaultCellStyle.Font = New System.Drawing.Font("Segoe UI", 9, System.Drawing.FontStyle.Bold)
         Me.dgvCourses.EnableHeadersVisualStyles = False

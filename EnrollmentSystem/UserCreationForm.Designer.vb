@@ -27,7 +27,7 @@ Partial Class UserCreationForm
         '
         'pnlHeader
         '
-        Me.pnlHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.pnlHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.pnlHeader.Controls.Add(Me.lblTitle)
         Me.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlHeader.Location = New System.Drawing.Point(0, 0)
@@ -48,7 +48,7 @@ Partial Class UserCreationForm
         '
         'pnlForm
         '
-        Me.pnlForm.BackColor = System.Drawing.Color.White
+        Me.pnlForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.pnlForm.Controls.Add(Me.lblFullName)
         Me.pnlForm.Controls.Add(Me.txtFullName)
         Me.pnlForm.Controls.Add(Me.lblUsername)
@@ -132,7 +132,7 @@ Partial Class UserCreationForm
         '
         'btnCreate
         '
-        Me.btnCreate.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btnCreate.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCreate.ForeColor = System.Drawing.Color.White
         Me.btnCreate.Location = New System.Drawing.Point(20, 260)
@@ -144,7 +144,7 @@ Partial Class UserCreationForm
         '
         'btnClear
         '
-        Me.btnClear.BackColor = System.Drawing.Color.Gray
+        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.ForeColor = System.Drawing.Color.White
         Me.btnClear.Location = New System.Drawing.Point(200, 260)
@@ -165,7 +165,7 @@ Partial Class UserCreationForm
         '
         'UserCreationForm
         '
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1000, 550)
         Me.Controls.Add(Me.pnlHeader)
         Me.Controls.Add(Me.pnlForm)
@@ -173,6 +173,7 @@ Partial Class UserCreationForm
         Me.Name = "UserCreationForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "User Creation Form"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnlHeader.ResumeLayout(False)
         Me.pnlHeader.PerformLayout()
         Me.pnlForm.ResumeLayout(False)

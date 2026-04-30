@@ -55,7 +55,7 @@ Partial Class RegistrarDashboard
         '
         'pnlSidebar
         '
-        Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.pnlSidebar.Controls.Add(Me.btnAssignschedule)
         Me.pnlSidebar.Controls.Add(Me.btnIrregularEnrollment)
         Me.pnlSidebar.Controls.Add(Me.btnDashboard)
@@ -74,7 +74,10 @@ Partial Class RegistrarDashboard
         '
         'btnIrregularEnrollment
         '
-        Me.btnIrregularEnrollment.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnIrregularEnrollment.BackColor = System.Drawing.Color.Transparent
+        Me.btnIrregularEnrollment.FlatAppearance.BorderSize = 0
+        Me.btnIrregularEnrollment.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnIrregularEnrollment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnIrregularEnrollment.Location = New System.Drawing.Point(12, 381)
         Me.btnIrregularEnrollment.Name = "btnIrregularEnrollment"
         Me.btnIrregularEnrollment.Size = New System.Drawing.Size(200, 45)
@@ -83,7 +86,10 @@ Partial Class RegistrarDashboard
         '
         'btnDashboard
         '
-        Me.btnDashboard.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
+        Me.btnDashboard.FlatAppearance.BorderSize = 0
+        Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDashboard.ForeColor = System.Drawing.Color.White
         Me.btnDashboard.Location = New System.Drawing.Point(10, 40)
         Me.btnDashboard.Name = "btnDashboard"
         Me.btnDashboard.Size = New System.Drawing.Size(200, 45)
@@ -92,7 +98,10 @@ Partial Class RegistrarDashboard
         '
         'btnStudents
         '
-        Me.btnStudents.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnStudents.BackColor = System.Drawing.Color.Transparent
+        Me.btnStudents.FlatAppearance.BorderSize = 0
+        Me.btnStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnStudents.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnStudents.Location = New System.Drawing.Point(10, 100)
         Me.btnStudents.Name = "btnStudents"
         Me.btnStudents.Size = New System.Drawing.Size(200, 45)
@@ -101,7 +110,10 @@ Partial Class RegistrarDashboard
         '
         'btnCourses
         '
-        Me.btnCourses.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnCourses.BackColor = System.Drawing.Color.Transparent
+        Me.btnCourses.FlatAppearance.BorderSize = 0
+        Me.btnCourses.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCourses.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnCourses.Location = New System.Drawing.Point(10, 160)
         Me.btnCourses.Name = "btnCourses"
         Me.btnCourses.Size = New System.Drawing.Size(200, 45)
@@ -110,7 +122,10 @@ Partial Class RegistrarDashboard
         '
         'btnSubjects
         '
-        Me.btnSubjects.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnSubjects.BackColor = System.Drawing.Color.Transparent
+        Me.btnSubjects.FlatAppearance.BorderSize = 0
+        Me.btnSubjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSubjects.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnSubjects.Location = New System.Drawing.Point(10, 215)
         Me.btnSubjects.Name = "btnSubjects"
         Me.btnSubjects.Size = New System.Drawing.Size(200, 45)
@@ -119,7 +134,10 @@ Partial Class RegistrarDashboard
         '
         'btnSchedule
         '
-        Me.btnSchedule.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnSchedule.BackColor = System.Drawing.Color.Transparent
+        Me.btnSchedule.FlatAppearance.BorderSize = 0
+        Me.btnSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSchedule.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnSchedule.Location = New System.Drawing.Point(10, 270)
         Me.btnSchedule.Name = "btnSchedule"
         Me.btnSchedule.Size = New System.Drawing.Size(200, 45)
@@ -128,7 +146,10 @@ Partial Class RegistrarDashboard
         '
         'btnSections
         '
-        Me.btnSections.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnSections.BackColor = System.Drawing.Color.Transparent
+        Me.btnSections.FlatAppearance.BorderSize = 0
+        Me.btnSections.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSections.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnSections.Location = New System.Drawing.Point(10, 325)
         Me.btnSections.Name = "btnSections"
         Me.btnSections.Size = New System.Drawing.Size(200, 45)
@@ -137,7 +158,10 @@ Partial Class RegistrarDashboard
         '
         'btnSectionSchedule
         '
-        Me.btnSectionSchedule.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnSectionSchedule.BackColor = System.Drawing.Color.Transparent
+        Me.btnSectionSchedule.FlatAppearance.BorderSize = 0
+        Me.btnSectionSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSectionSchedule.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnSectionSchedule.Location = New System.Drawing.Point(10, 380)
         Me.btnSectionSchedule.Name = "btnSectionSchedule"
         Me.btnSectionSchedule.Size = New System.Drawing.Size(200, 45)
@@ -146,7 +170,9 @@ Partial Class RegistrarDashboard
         '
         'btnLogout
         '
-        Me.btnLogout.BackColor = System.Drawing.Color.Red
+        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.btnLogout.FlatAppearance.BorderSize = 0
+        Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.ForeColor = System.Drawing.Color.White
         Me.btnLogout.Location = New System.Drawing.Point(10, 600)
         Me.btnLogout.Name = "btnLogout"
@@ -157,7 +183,7 @@ Partial Class RegistrarDashboard
         '
         'pnlTop
         '
-        Me.pnlTop.BackColor = System.Drawing.Color.White
+        Me.pnlTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.pnlTop.Controls.Add(Me.lblTitle)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(220, 0)
@@ -169,7 +195,7 @@ Partial Class RegistrarDashboard
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.lblTitle.Location = New System.Drawing.Point(368, 29)
+        Me.lblTitle.ForeColor = System.Drawing.Color.White
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(377, 41)
         Me.lblTitle.TabIndex = 0
@@ -177,7 +203,7 @@ Partial Class RegistrarDashboard
         '
         'pnlMain
         '
-        Me.pnlMain.BackColor = System.Drawing.Color.White
+        Me.pnlMain.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.pnlMain.Controls.Add(Me.cardStudents)
         Me.pnlMain.Controls.Add(Me.cardEnrolled)
         Me.pnlMain.Controls.Add(Me.cardCourses)
@@ -190,7 +216,7 @@ Partial Class RegistrarDashboard
         '
         'cardStudents
         '
-        Me.cardStudents.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
+        Me.cardStudents.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.cardStudents.Controls.Add(Me.lblStudents)
         Me.cardStudents.Location = New System.Drawing.Point(260, 100)
         Me.cardStudents.Name = "cardStudents"
@@ -209,7 +235,7 @@ Partial Class RegistrarDashboard
         '
         'cardEnrolled
         '
-        Me.cardEnrolled.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(113, Byte), Integer))
+        Me.cardEnrolled.BackColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.cardEnrolled.Controls.Add(Me.lblEnrolled)
         Me.cardEnrolled.Location = New System.Drawing.Point(480, 100)
         Me.cardEnrolled.Name = "cardEnrolled"
@@ -228,7 +254,7 @@ Partial Class RegistrarDashboard
         '
         'cardCourses
         '
-        Me.cardCourses.BackColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(182, Byte), Integer))
+        Me.cardCourses.BackColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(237, Byte), Integer))
         Me.cardCourses.Controls.Add(Me.lblCourses)
         Me.cardCourses.Location = New System.Drawing.Point(700, 100)
         Me.cardCourses.Name = "cardCourses"
@@ -247,7 +273,7 @@ Partial Class RegistrarDashboard
         '
         'cardSubjects
         '
-        Me.cardSubjects.BackColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.cardSubjects.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.cardSubjects.Controls.Add(Me.lblSubjects)
         Me.cardSubjects.Location = New System.Drawing.Point(920, 100)
         Me.cardSubjects.Name = "cardSubjects"
@@ -266,7 +292,10 @@ Partial Class RegistrarDashboard
         '
         'btnAssignschedule
         '
-        Me.btnAssignschedule.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnAssignschedule.BackColor = System.Drawing.Color.Transparent
+        Me.btnAssignschedule.FlatAppearance.BorderSize = 0
+        Me.btnAssignschedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAssignschedule.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnAssignschedule.Location = New System.Drawing.Point(10, 432)
         Me.btnAssignschedule.Name = "btnAssignschedule"
         Me.btnAssignschedule.Size = New System.Drawing.Size(200, 45)
@@ -277,7 +306,7 @@ Partial Class RegistrarDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1542, 700)
         Me.Controls.Add(Me.pnlMain)
         Me.Controls.Add(Me.pnlTop)
@@ -285,6 +314,7 @@ Partial Class RegistrarDashboard
         Me.Name = "RegistrarDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registrar Dashboard"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnlSidebar.ResumeLayout(False)
         Me.pnlTop.ResumeLayout(False)
         Me.pnlTop.PerformLayout()

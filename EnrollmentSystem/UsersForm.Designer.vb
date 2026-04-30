@@ -26,6 +26,10 @@ Partial Class UsersForm
         '
         'btnLoad
         '
+        Me.btnLoad.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
+        Me.btnLoad.FlatAppearance.BorderSize = 0
+        Me.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLoad.ForeColor = System.Drawing.Color.White
         Me.btnLoad.Location = New System.Drawing.Point(240, 418)
         Me.btnLoad.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLoad.Name = "btnLoad"
@@ -36,6 +40,10 @@ Partial Class UsersForm
         '
         'btnVerify
         '
+        Me.btnVerify.BackColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.btnVerify.FlatAppearance.BorderSize = 0
+        Me.btnVerify.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVerify.ForeColor = System.Drawing.Color.White
         Me.btnVerify.Location = New System.Drawing.Point(453, 418)
         Me.btnVerify.Margin = New System.Windows.Forms.Padding(4)
         Me.btnVerify.Name = "btnVerify"
@@ -46,6 +54,10 @@ Partial Class UsersForm
         '
         'btnReject
         '
+        Me.btnReject.BackColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.btnReject.FlatAppearance.BorderSize = 0
+        Me.btnReject.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReject.ForeColor = System.Drawing.Color.White
         Me.btnReject.Location = New System.Drawing.Point(667, 418)
         Me.btnReject.Margin = New System.Windows.Forms.Padding(4)
         Me.btnReject.Name = "btnReject"
@@ -58,7 +70,7 @@ Partial Class UsersForm
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.lblTitle.Location = New System.Drawing.Point(400, 25)
+        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.lblTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(273, 37)
@@ -69,6 +81,7 @@ Partial Class UsersForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.btnReject)
@@ -79,6 +92,7 @@ Partial Class UsersForm
         Me.Name = "UsersForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "User Verification"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.dgvUsers, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

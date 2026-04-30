@@ -43,7 +43,7 @@ Partial Class StudentForm
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.lblTitle.Location = New System.Drawing.Point(380, 20)
+        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(300, 41)
         Me.lblTitle.TabIndex = 0
@@ -137,6 +137,10 @@ Partial Class StudentForm
         '
         'btnUpdate
         '
+        Me.btnUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
+        Me.btnUpdate.FlatAppearance.BorderSize = 0
+        Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdate.ForeColor = System.Drawing.Color.White
         Me.btnUpdate.Location = New System.Drawing.Point(36, 149)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
@@ -145,6 +149,10 @@ Partial Class StudentForm
         '
         'btnDelete
         '
+        Me.btnDelete.BackColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.btnDelete.FlatAppearance.BorderSize = 0
+        Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelete.ForeColor = System.Drawing.Color.White
         Me.btnDelete.Location = New System.Drawing.Point(126, 149)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(75, 23)
@@ -153,6 +161,10 @@ Partial Class StudentForm
         '
         'btnClear
         '
+        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.btnClear.FlatAppearance.BorderSize = 0
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.ForeColor = System.Drawing.Color.White
         Me.btnClear.Location = New System.Drawing.Point(216, 149)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(75, 23)
@@ -185,6 +197,7 @@ Partial Class StudentForm
         '
         'StudentForm
         '
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1475, 697)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.lblStudentID)
@@ -226,6 +239,7 @@ Partial Class StudentForm
         Me.Name = "StudentForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Student Records"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.dgvStudents, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

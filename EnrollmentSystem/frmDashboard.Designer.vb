@@ -33,7 +33,7 @@ Partial Class frmDashboard
         '
         'pnlSidebar
         '
-        Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.pnlSidebar.Controls.Add(Me.btnSchedule)
         Me.pnlSidebar.Controls.Add(Me.btnFaculty)
         Me.pnlSidebar.Controls.Add(Me.btnSubjects)
@@ -49,9 +49,11 @@ Partial Class frmDashboard
         '
         'btnSchedule
         '
+        Me.btnSchedule.BackColor = System.Drawing.Color.Transparent
         Me.btnSchedule.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnSchedule.FlatAppearance.BorderSize = 0
         Me.btnSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSchedule.ForeColor = System.Drawing.Color.White
+        Me.btnSchedule.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnSchedule.Location = New System.Drawing.Point(0, 250)
         Me.btnSchedule.Name = "btnSchedule"
         Me.btnSchedule.Size = New System.Drawing.Size(220, 50)
@@ -60,9 +62,11 @@ Partial Class frmDashboard
         '
         'btnFaculty
         '
+        Me.btnFaculty.BackColor = System.Drawing.Color.Transparent
         Me.btnFaculty.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnFaculty.FlatAppearance.BorderSize = 0
         Me.btnFaculty.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFaculty.ForeColor = System.Drawing.Color.White
+        Me.btnFaculty.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnFaculty.Location = New System.Drawing.Point(0, 200)
         Me.btnFaculty.Name = "btnFaculty"
         Me.btnFaculty.Size = New System.Drawing.Size(220, 50)
@@ -71,9 +75,11 @@ Partial Class frmDashboard
         '
         'btnSubjects
         '
+        Me.btnSubjects.BackColor = System.Drawing.Color.Transparent
         Me.btnSubjects.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnSubjects.FlatAppearance.BorderSize = 0
         Me.btnSubjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSubjects.ForeColor = System.Drawing.Color.White
+        Me.btnSubjects.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnSubjects.Location = New System.Drawing.Point(0, 150)
         Me.btnSubjects.Name = "btnSubjects"
         Me.btnSubjects.Size = New System.Drawing.Size(220, 50)
@@ -82,9 +88,11 @@ Partial Class frmDashboard
         '
         'btnSections
         '
+        Me.btnSections.BackColor = System.Drawing.Color.Transparent
         Me.btnSections.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnSections.FlatAppearance.BorderSize = 0
         Me.btnSections.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSections.ForeColor = System.Drawing.Color.White
+        Me.btnSections.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnSections.Location = New System.Drawing.Point(0, 100)
         Me.btnSections.Name = "btnSections"
         Me.btnSections.Size = New System.Drawing.Size(220, 50)
@@ -93,9 +101,11 @@ Partial Class frmDashboard
         '
         'btnStudents
         '
+        Me.btnStudents.BackColor = System.Drawing.Color.Transparent
         Me.btnStudents.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnStudents.FlatAppearance.BorderSize = 0
         Me.btnStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnStudents.ForeColor = System.Drawing.Color.White
+        Me.btnStudents.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnStudents.Location = New System.Drawing.Point(0, 50)
         Me.btnStudents.Name = "btnStudents"
         Me.btnStudents.Size = New System.Drawing.Size(220, 50)
@@ -104,7 +114,9 @@ Partial Class frmDashboard
         '
         'btnDashboard
         '
+        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnDashboard.FlatAppearance.BorderSize = 0
         Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDashboard.ForeColor = System.Drawing.Color.White
         Me.btnDashboard.Location = New System.Drawing.Point(0, 0)
@@ -115,7 +127,9 @@ Partial Class frmDashboard
         '
         'btnLogout
         '
+        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
         Me.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnLogout.FlatAppearance.BorderSize = 0
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.ForeColor = System.Drawing.Color.White
         Me.btnLogout.Location = New System.Drawing.Point(0, 650)
@@ -126,7 +140,7 @@ Partial Class frmDashboard
         '
         'pnlTop
         '
-        Me.pnlTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(113, Byte), Integer))
+        Me.pnlTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.pnlTop.Controls.Add(Me.lblTitle)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(220, 0)
@@ -147,7 +161,7 @@ Partial Class frmDashboard
         '
         'pnlMain
         '
-        Me.pnlMain.BackColor = System.Drawing.Color.White
+        Me.pnlMain.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlMain.Location = New System.Drawing.Point(220, 60)
         Me.pnlMain.Name = "pnlMain"
@@ -158,6 +172,7 @@ Partial Class frmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1200, 700)
         Me.Controls.Add(Me.pnlMain)
         Me.Controls.Add(Me.pnlTop)
@@ -165,6 +180,7 @@ Partial Class frmDashboard
         Me.Name = "frmDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registrar Dashboard"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnlSidebar.ResumeLayout(False)
         Me.pnlTop.ResumeLayout(False)
         Me.pnlTop.PerformLayout()

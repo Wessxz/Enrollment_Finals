@@ -33,7 +33,7 @@ Partial Class CashierDashboard
         '
         'pnlSidebar
         '
-        Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.pnlSidebar.Controls.Add(Me.btnDashboard)
         Me.pnlSidebar.Controls.Add(Me.btnPayment)
         Me.pnlSidebar.Controls.Add(Me.btnBilling)
@@ -47,7 +47,7 @@ Partial Class CashierDashboard
         '
         'btnDashboard
         '
-        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.btnDashboard.FlatAppearance.BorderSize = 0
         Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDashboard.ForeColor = System.Drawing.Color.White
@@ -60,10 +60,10 @@ Partial Class CashierDashboard
         '
         'btnPayment
         '
-        Me.btnPayment.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.btnPayment.BackColor = System.Drawing.Color.Transparent
         Me.btnPayment.FlatAppearance.BorderSize = 0
         Me.btnPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPayment.ForeColor = System.Drawing.Color.White
+        Me.btnPayment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnPayment.Location = New System.Drawing.Point(0, 120)
         Me.btnPayment.Name = "btnPayment"
         Me.btnPayment.Size = New System.Drawing.Size(230, 45)
@@ -73,10 +73,10 @@ Partial Class CashierDashboard
         '
         'btnBilling
         '
-        Me.btnBilling.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnBilling.BackColor = System.Drawing.Color.Transparent
         Me.btnBilling.FlatAppearance.BorderSize = 0
         Me.btnBilling.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBilling.ForeColor = System.Drawing.Color.White
+        Me.btnBilling.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnBilling.Location = New System.Drawing.Point(0, 170)
         Me.btnBilling.Name = "btnBilling"
         Me.btnBilling.Size = New System.Drawing.Size(230, 45)
@@ -86,10 +86,10 @@ Partial Class CashierDashboard
         '
         'btnReports
         '
-        Me.btnReports.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.btnReports.BackColor = System.Drawing.Color.Transparent
         Me.btnReports.FlatAppearance.BorderSize = 0
         Me.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReports.ForeColor = System.Drawing.Color.White
+        Me.btnReports.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.btnReports.Location = New System.Drawing.Point(0, 220)
         Me.btnReports.Name = "btnReports"
         Me.btnReports.Size = New System.Drawing.Size(230, 45)
@@ -99,7 +99,7 @@ Partial Class CashierDashboard
         '
         'btnLogout
         '
-        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
         Me.btnLogout.FlatAppearance.BorderSize = 0
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.ForeColor = System.Drawing.Color.White
@@ -112,7 +112,7 @@ Partial Class CashierDashboard
         '
         'pnlHeader
         '
-        Me.pnlHeader.BackColor = System.Drawing.Color.White
+        Me.pnlHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.pnlHeader.Controls.Add(Me.lblTitle)
         Me.pnlHeader.Controls.Add(Me.lblUser)
         Me.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top
@@ -125,6 +125,7 @@ Partial Class CashierDashboard
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.lblTitle.ForeColor = System.Drawing.Color.White
         Me.lblTitle.Location = New System.Drawing.Point(20, 20)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(258, 37)
@@ -135,7 +136,7 @@ Partial Class CashierDashboard
         '
         Me.lblUser.AutoSize = True
         Me.lblUser.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.lblUser.ForeColor = System.Drawing.Color.Gray
+        Me.lblUser.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.lblUser.Location = New System.Drawing.Point(950, 25)
         Me.lblUser.Name = "lblUser"
         Me.lblUser.Size = New System.Drawing.Size(66, 23)
@@ -144,7 +145,7 @@ Partial Class CashierDashboard
         '
         'pnlMain
         '
-        Me.pnlMain.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.pnlMain.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlMain.Location = New System.Drawing.Point(230, 70)
         Me.pnlMain.Name = "pnlMain"
@@ -153,13 +154,14 @@ Partial Class CashierDashboard
         '
         'CashierDashboard
         '
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1100, 650)
         Me.Controls.Add(Me.pnlMain)
         Me.Controls.Add(Me.pnlHeader)
         Me.Controls.Add(Me.pnlSidebar)
         Me.Name = "CashierDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnlSidebar.ResumeLayout(False)
         Me.pnlHeader.ResumeLayout(False)
         Me.pnlHeader.PerformLayout()

@@ -59,7 +59,7 @@ Partial Class ScheduleForm
         '
         'pnlTop
         '
-        Me.pnlTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.pnlTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.pnlTop.Controls.Add(Me.lblTitle)
         Me.pnlTop.Controls.Add(Me.lblSection)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
@@ -93,7 +93,7 @@ Partial Class ScheduleForm
         '
         'pnlFilter
         '
-        Me.pnlFilter.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.pnlFilter.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.pnlFilter.Controls.Add(Me.lblSemFilter)
         Me.pnlFilter.Controls.Add(Me.cmbSemFilter)
         Me.pnlFilter.Controls.Add(Me.lblAYFilter)
@@ -141,7 +141,7 @@ Partial Class ScheduleForm
         '
         'btnFilter
         '
-        Me.btnFilter.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.btnFilter.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.btnFilter.FlatAppearance.BorderSize = 0
         Me.btnFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnFilter.ForeColor = System.Drawing.Color.White
@@ -154,7 +154,7 @@ Partial Class ScheduleForm
         '
         'pnlForm
         '
-        Me.pnlForm.BackColor = System.Drawing.Color.White
+        Me.pnlForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.pnlForm.Controls.Add(Me.lblSubject)
         Me.pnlForm.Controls.Add(Me.cmbSubject)
         Me.pnlForm.Controls.Add(Me.lblInstructor)
@@ -336,7 +336,7 @@ Partial Class ScheduleForm
         '
         'pnlButtons
         '
-        Me.pnlButtons.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.pnlButtons.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.pnlButtons.Controls.Add(Me.btnAdd)
         Me.pnlButtons.Controls.Add(Me.btnUpdate)
         Me.pnlButtons.Controls.Add(Me.btnDelete)
@@ -348,7 +348,7 @@ Partial Class ScheduleForm
         '
         'btnAdd
         '
-        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.btnAdd.FlatAppearance.BorderSize = 0
         Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAdd.ForeColor = System.Drawing.Color.White
@@ -361,7 +361,7 @@ Partial Class ScheduleForm
         '
         'btnUpdate
         '
-        Me.btnUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.btnUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.btnUpdate.FlatAppearance.BorderSize = 0
         Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUpdate.ForeColor = System.Drawing.Color.White
@@ -387,7 +387,7 @@ Partial Class ScheduleForm
         '
         'btnClear
         '
-        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(107, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.btnClear.FlatAppearance.BorderSize = 0
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.ForeColor = System.Drawing.Color.White
@@ -418,7 +418,7 @@ Partial Class ScheduleForm
         '
         'ScheduleForm
         '
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1430, 720)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.pnlFilter)
@@ -429,6 +429,7 @@ Partial Class ScheduleForm
         Me.Name = "ScheduleForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Schedule Management"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnlTop.ResumeLayout(False)
         Me.pnlTop.PerformLayout()
         Me.pnlFilter.ResumeLayout(False)

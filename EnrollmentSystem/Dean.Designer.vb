@@ -18,7 +18,7 @@ Partial Class Dean
         '
         'pnlSidebar
         '
-        Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.pnlSidebar.Controls.Add(Me.Button1)
         Me.pnlSidebar.Controls.Add(Me.btnGrades)
         Me.pnlSidebar.Controls.Add(Me.btnAnnouncements)
@@ -32,7 +32,7 @@ Partial Class Dean
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.White
@@ -45,7 +45,7 @@ Partial Class Dean
         '
         'btnGrades
         '
-        Me.btnGrades.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.btnGrades.BackColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.btnGrades.FlatAppearance.BorderSize = 0
         Me.btnGrades.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGrades.ForeColor = System.Drawing.Color.White
@@ -58,7 +58,7 @@ Partial Class Dean
         '
         'btnAnnouncements
         '
-        Me.btnAnnouncements.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.btnAnnouncements.BackColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.btnAnnouncements.FlatAppearance.BorderSize = 0
         Me.btnAnnouncements.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAnnouncements.ForeColor = System.Drawing.Color.White
@@ -71,7 +71,7 @@ Partial Class Dean
         '
         'btnClassList
         '
-        Me.btnClassList.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.btnClassList.BackColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.btnClassList.FlatAppearance.BorderSize = 0
         Me.btnClassList.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClassList.ForeColor = System.Drawing.Color.White
@@ -84,7 +84,7 @@ Partial Class Dean
         '
         'btnLogout
         '
-        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(29, Byte), Integer))
         Me.btnLogout.FlatAppearance.BorderSize = 0
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.ForeColor = System.Drawing.Color.White
@@ -97,6 +97,7 @@ Partial Class Dean
         '
         'lblTitle
         '
+        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold)
         Me.lblTitle.Location = New System.Drawing.Point(260, 40)
@@ -107,13 +108,14 @@ Partial Class Dean
         '
         'Dean
         '
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1000, 600)
         Me.Controls.Add(Me.pnlSidebar)
         Me.Controls.Add(Me.lblTitle)
         Me.Name = "Dean"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Faculty Dashboard"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnlSidebar.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
